@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="grid wide">
+        <header id="header">
+            <!-- mobile-header -->
+            <div class="m-header n-m-hide">
+                <div class="row">
+                    <div class="col c-12 m-4 l-3 m-header-swapper">
+                        <!-- <span class="m-header__show-icon">
+                            <i class="fas fa-bars"></i>
+                        </span> -->
+                        <span class="m-header__search-icon">
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <form action="" class="m-header__search-form">
+                            <input type="text" placeholder="Tìm Shoppe">
+                        </form>
+                        <span class="m-header__cart">
+                            <i class="fas fa-shopping-cart"></i>
+                        </span>
+                        <span class="m-header__user">
+                            <i class="far fa-user"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PC header -->
+            <!-- slider -->
+            <div class="header-slider">
+                <div class="row">
+                    <div class="col c-12 m-12 l-8">
+                        <div class="slider-img-group">
+                            <img class="slider-img__list now" src="./assets/img/sl1.png">
+                            <img class="slider-img__list" src="./assets/img/sl2.png">
+                            <img class="slider-img__list" src="./assets/img/sl1.png">
+                            <img class="slider-img__list" src="./assets/img/sl2.png">
+                        </div>
+
+                        <ul class="slider-control">
+                            <li class="slider-control__btn active" data-slide-to="0"></li>
+                            <li class="slider-control__btn" data-slide-to="1"></li>
+                            <li class="slider-control__btn" data-slide-to="2"></li>
+                            <li class="slider-control__btn" data-slide-to="3"></li>
+                        </ul>
+                    </div>
+                    <div class="col l-4 side-bar">
+                        <img src="./assets/img/sd1.png" alt="">
+                        <img src="./assets/img/sd2.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </header>
+    </div>
+</body>
+<script src="assets/js/slider.js"></script>
+
+</html>
