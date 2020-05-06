@@ -1,0 +1,27 @@
+Xây dựng web-layout bán hàng online
+Các kiến thức sử dụng 
+	+ Thiết kế web responsive
+	+ HTML + CSS
+	+ JS: hidden menu and animation.  
+	+ BEM: đặt tên class trong CSS
+	+ OOCSS: Object Oriented CSS
+	+ SASS: CSS Preprocessor
+1. Xây dựng grid-system: thiết kế responsive: flex-box
+2. Xây dựng các web-component
+	+ Sticky menu.
+	+ Footer.
+	+ Header.
+	+ Nav-bar backend. 
+3. Các layout cơ bản: 
+	Front-end	+ Trang chủ.
+			+ Trang chi tiết sản phẩm.
+			+ Trang giỏ hàng.
+			+ Trang thanh toán.
+			+ Trang đăng nhập.
+			+ Trang đăng ký.
+
+	Backend		+ Trang admin đăng nhập.
+			+ Trang tổng quan. 
+			+ Trang quản lý doanh thu.
+			+ Quản lý nhân viên.
+			+ Quản lý đơn hàng.

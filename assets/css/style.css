@@ -48,6 +48,7 @@ ul {
   font-size: 1.2rem;
   text-align: right !important;
   margin-left: 4px;
+  margin-right: -1px;
 }
 .m-header__search-form {
   flex: 1;
@@ -106,8 +107,8 @@ ul {
 }
 .header-slider .slider-control {
   text-align: center;
-  position: absolute;
-  top: 110px;
+  position: relative;
+  top: -12vw;
 }
 .header-slider .slider-control .slider-control__btn {
   z-index: 1;
