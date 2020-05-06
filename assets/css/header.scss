@@ -60,7 +60,7 @@ $slider-btn-w: 10px;
 
 .header-slider {
     position: relative;
-    max-height: 170px;
+    max-height: 205px;
     .side-bar {
         img {
             width: 100%;
@@ -72,8 +72,8 @@ $slider-btn-w: 10px;
         width: 100%;
         position: relative;
         min-height: 110px;
-        max-height: 170px;
-        overflow-x: hidden;
+        max-height: 205px;
+        overflow: hidden;
         .slider-img__list{
             width: 100%;
             height: auto;
@@ -81,6 +81,7 @@ $slider-btn-w: 10px;
             position: absolute;
             opacity: 0;
             top: 0;
+            overflow: hidden;
         }
         .slider-img__list.now {
             animation: slideTransition-in 1s forwards;
@@ -105,12 +106,13 @@ $slider-btn-w: 10px;
             border: 1px solid rgb(107, 107, 107);
             margin: 5px; 
         }
-        .active {
-            background-color: $primary-c !important;
+        .slider-control__btn.active {
+            background-color: $primary-c;
             border: none;
             height: $slider-btn-w + 1;
             width: $slider-btn-w + 1;
         }
+        
     }
 }
 

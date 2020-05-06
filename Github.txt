@@ -1,0 +1,11 @@
+GitHub là gì?
+
+git init 
+git clone <link>
+git pull //
+git push -u <remote name> <branch name> //branch name thường là master // remote name thường là origin 
+git add <ten file>
+git add .  // add all file in folder
+git commit -m <message>
+git remote add <remote name> <link repos>
+git remote rm <remote name> <link repos>

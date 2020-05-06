@@ -1,16 +1,26 @@
 //DOM = Document modeling ...
 document.addEventListener("DOMContentLoaded", function () {
     "use strict"
+    setInterval(time);
+    // Variable declaration
     var sliderImg = document.getElementsByClassName("slider-img__list"),
         btn = document.querySelectorAll(".slider-control__btn"),
-        len = btn.length;
+        len = btn.length,
+        los;
 
+    // Add Event Click
     for (var i = 0; i < len; i++) {
         btn[i].addEventListener("click", function () {
-            setInterval(time);
+            clearInterval(time);
             for (var j = 0; j < len; j++) {
-                btn[j].classList.remove("active");
+                if (btn[j].classList[1] == "active") {
+                    los = btn[j].getAttribute("data-slide-to");
+                }
+                sliderImg[j].classList.remove("now");
+                sliderImg[j].classList.remove("losing");
+
             }
+            btn[los].classList.remove("active");
             this.classList.add("active");
 
             // Cach 1
@@ -29,10 +39,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 count++;
             }
             */
-            // Cach 3
+            // Cach 3: using "data-slide-to"
             var posN = this.getAttribute("data-slide-to"); // vi tri hien tai
+            sliderImg[los].classList.add("losing");
             sliderImg[posN].classList.add("now");
-
+            setTimeout(setInterval(time), 2 * 1000);
         });
     }
     // Tu dong chay
@@ -46,8 +57,9 @@ document.addEventListener("DOMContentLoaded", function () {
         for (var i = 0; i < len; i++) {
             if (btn[i].classList[1] == "active") {
                 pNow = btn[i].getAttribute("data-slide-to");
-                break;
             }
+            sliderImg[i].classList.remove("now");
+            sliderImg[i].classList.remove("losing");
         }
         if (pNow == 0) {
             sliderImg[len - 1].classList.remove("losing");
@@ -56,7 +68,8 @@ document.addEventListener("DOMContentLoaded", function () {
             sliderImg[pNow - 1].classList.remove("losing");
         }
         btn[pNow].classList.remove("active");
-        sliderImg[pNow].className = sliderImg[pNow].className.replace("now", "losing");
+        //sliderImg[pNow].className = sliderImg[pNow].className.replace("now", "losing");
+        sliderImg[pNow].classList.add("losing")
         // kiem tra xem co phai vi tri cuoi cung ko.
         if (pNow == len - 1) pNow = 0;
         else pNow++;
