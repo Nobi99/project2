@@ -1,4 +1,7 @@
-Xây dựng web-layout bán hàng online
+Xây dựng web-layout bán hàng online (shopee clone)
+
+
+
 Các kiến thức sử dụng 
 	+ Thiết kế web responsive
 	+ HTML + CSS
@@ -6,22 +9,33 @@ Các kiến thức sử dụng
 	+ BEM: đặt tên class trong CSS
 	+ OOCSS: Object Oriented CSS
 	+ SASS: CSS Preprocessor
-1. Xây dựng grid-system: thiết kế responsive: flex-box
+	+ Github
+1. Xây dựng grid-system: thiết kế responsive: flex-box (sử dụng responsive của F8)
+	+ Break point 
+		-  
+	+
 2. Xây dựng các web-component
 	+ Sticky menu.
 	+ Footer.
 	+ Header.
-	+ Nav-bar backend. 
+	+ Nav-bar.
+	+ Slider. (done) 
 3. Các layout cơ bản: 
 	Front-end	+ Trang chủ.
+			+ Trang sản phẩm 
 			+ Trang chi tiết sản phẩm.
 			+ Trang giỏ hàng.
 			+ Trang thanh toán.
 			+ Trang đăng nhập.
 			+ Trang đăng ký.
+			+ 404 not found
 
 	Backend		+ Trang admin đăng nhập.
 			+ Trang tổng quan. 
 			+ Trang quản lý doanh thu.
 			+ Quản lý nhân viên.
 			+ Quản lý đơn hàng.
+
+		
+
+

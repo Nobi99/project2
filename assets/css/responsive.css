@@ -1,24 +1,43 @@
 /* Tablet */
-@media (min-width: 740px) and (max-width: 1023px){
-    .n-m-hide { 
-        display: none;
-    }
-    
-    /* n-m ~ Not mobile -> hide */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .n-m-hide {
+    display: none;
+  }
+
+  .header-slider .slider-control .slider-control__btn {
+    height: 10px;
+    width: 10px;
+  }
+
+  /* n-m ~ Not mobile -> hide */
 }
 /* Tablet & mobile  */
-@media (max-width: 1023px) {
-    
-}
-
 /* PC */
-
 @media (min-width: 1024px) {
-    .n-m-hide {
-        display: none;
-   }
-   .header-slider .side-bar {
-       display: block;
-   }
-   /* n-m ~ Not mobile -> hide */
+  .n-m-hide {
+    display: none;
+  }
+
+  .header-slider .side-bar {
+    display: block;
+  }
+
+  .header-slider .slider-control {
+    right: 65%;
+  }
+
+  /* n-m ~ Not mobile -> hide */
 }
+/*Tablet and PC*/
+@media (min-width: 740px) {
+  .header-slider .slider-control__btn {
+    height: 10px;
+    width: 10px;
+  }
+  .header-slider .slider-control__btn.active {
+    height: 11px;
+    width: 11px;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */

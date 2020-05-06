@@ -1,7 +1,7 @@
 $primary-c: #ee4d2d; // c ~ color
 $icon-w: 30px; // w ~ width
 $rs: 3px; //border-radius: 3px;
-$slider-btn-w: 10px;
+$slider-btn-w: 8px;
 
 .m-header {
     overflow: hidden;
@@ -60,7 +60,7 @@ $slider-btn-w: 10px;
 
 .header-slider {
     position: relative;
-    max-height: 205px;
+    // max-height: 170px;
     .side-bar {
         img {
             width: 100%;
@@ -71,12 +71,13 @@ $slider-btn-w: 10px;
     .slider-img-group {
         width: 100%;
         position: relative;
-        min-height: 110px;
-        max-height: 205px;
+        min-height: 80px;
+        max-height: 170px;
         overflow: hidden;
         .slider-img__list{
             width: 100%;
             height: auto;
+            min-height: 110px;
             max-height: 170px;
             position: absolute;
             opacity: 0;
@@ -91,12 +92,11 @@ $slider-btn-w: 10px;
         }
     }
     .slider-control {
-        text-align: center;
-        position: relative;
-        top: -12vw;
-        // right: 50%;
-        // transform: translateX(50%); // lỗi ở PC
-        .slider-control__btn {
+        position: absolute;
+        top: 83%;
+        right: 50%;
+        transform: translateX(50%); 
+        &__btn {
             z-index: 1;
             display: inline-block;
             height: $slider-btn-w;
@@ -106,7 +106,7 @@ $slider-btn-w: 10px;
             border: 1px solid rgb(107, 107, 107);
             margin: 5px; 
         }
-        .slider-control__btn.active {
+        &__btn.active {
             background-color: $primary-c;
             border: none;
             height: $slider-btn-w + 1;

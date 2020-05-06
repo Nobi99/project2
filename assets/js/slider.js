@@ -1,21 +1,22 @@
 //DOM = Document modeling ...
 document.addEventListener("DOMContentLoaded", function () {
     "use strict"
-    setInterval(time);
+
     // Variable declaration
     var sliderImg = document.getElementsByClassName("slider-img__list"),
         btn = document.querySelectorAll(".slider-control__btn"),
         len = btn.length,
         los;
-
     // Add Event Click
     for (var i = 0; i < len; i++) {
         btn[i].addEventListener("click", function () {
             clearInterval(time);
+            // tim vi tri slide hien tai
             for (var j = 0; j < len; j++) {
                 if (btn[j].classList[1] == "active") {
                     los = btn[j].getAttribute("data-slide-to");
                 }
+                // xoa cac class cu di de tranh bug
                 sliderImg[j].classList.remove("now");
                 sliderImg[j].classList.remove("losing");
 
@@ -40,10 +41,10 @@ document.addEventListener("DOMContentLoaded", function () {
             }
             */
             // Cach 3: using "data-slide-to"
-            var posN = this.getAttribute("data-slide-to"); // vi tri hien tai
+            // vi tri hien tai
+            var posN = this.getAttribute("data-slide-to");
             sliderImg[los].classList.add("losing");
             sliderImg[posN].classList.add("now");
-            setTimeout(setInterval(time), 2 * 1000);
         });
     }
     // Tu dong chay
