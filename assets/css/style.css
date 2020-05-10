@@ -73,15 +73,25 @@ ul {
   font-size: 1.5rem;
 }
 
+.pc-header {
+  height: 120px;
+  width: 100%;
+  background: linear-gradient(-180deg, #f53d2d, #f63);
+}
+
 .header-slider {
   position: relative;
 }
 .header-slider .side-bar {
+  max-height: 170px;
   display: none;
 }
 .header-slider .side-bar img {
   width: 100%;
-  height: auto;
+  max-height: 80px;
+}
+.header-slider .side-bar img:first-child {
+  margin-bottom: 6px;
 }
 .header-slider .slider-img-group {
   width: 100%;

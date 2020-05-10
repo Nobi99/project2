@@ -53,5 +53,15 @@
     }
 }
 
-// @media (max-width: 1239px) and (min-width: 1024px) {
-// }
+@media (max-width: 1239px) and (min-width: 1024px) {
+    .header-slider {
+        .side-bar {
+            img:last-child {
+                display: none;
+            }
+            img:first-child {
+                max-height: 100%;
+            }
+        }
+    }
+}

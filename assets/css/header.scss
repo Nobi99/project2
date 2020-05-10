@@ -58,13 +58,40 @@ $slider-btn-w: 8px;
     }
 }
 
+.pc-header {
+    height: 120px;
+    width: 100%;
+    background: linear-gradient(-180deg,#f53d2d,#f63);
+
+
+    &-top {
+        .top-right {
+            .top-right-items {
+                .top-right-items-icon {
+
+                }
+            }
+        }
+        .top-left {
+
+        }
+    }
+    &-mid {
+
+    }
+}
+
 .header-slider {
     position: relative;
     // max-height: 170px;
     .side-bar {
+        max-height: 170px;
         img {
             width: 100%;
-            height: auto;
+            max-height: 80px;
+        }
+        img:first-child {
+            margin-bottom: 6px;
         }
         display: none;
     }
