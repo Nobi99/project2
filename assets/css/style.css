@@ -31,9 +31,25 @@ a:active {
 }
 
 .seperator {
-  height: 10px;
-  width: 2px;
-  background-color: white;
+  border-right: 1px solid white !important;
+}
+
+.popover {
+  position: absolute;
+  z-index: 1;
+  right: 8px;
+  top: 28px;
+}
+
+.popover::before {
+  content: "";
+  height: 0;
+  width: 0;
+  border: 15px solid transparent;
+  border-bottom-color: white;
+  position: absolute;
+  top: -22px;
+  right: 18px;
 }
 
 .m-header {
@@ -94,6 +110,7 @@ a:active {
   height: 120px;
   width: 100%;
   background: linear-gradient(-180deg, #f53d2d, #f63);
+  color: white;
 }
 .pc-header li {
   margin: 8px 0px;
@@ -102,10 +119,13 @@ a:active {
 .pc-header-top {
   display: flex;
   font-size: 1.6rem;
+  justify-content: space-between;
+}
+.pc-header-top li a:hover {
+  color: rgba(255, 255, 255, 0.5);
 }
 .pc-header-top .top-right {
   display: flex;
-  margin-right: auto;
 }
 .pc-header-top .top-right li {
   border-right: 2px solid #ffffff38;
@@ -115,6 +135,53 @@ a:active {
 }
 .pc-header-top .top-left {
   display: flex;
+}
+.pc-header-top .top-left-items {
+  cursor: pointer;
+}
+.pc-header-top .top-left-items:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+.pc-header-top .top-left__notification {
+  position: relative;
+}
+.pc-header-top .top-left__notification .notification__off {
+  cursor: text;
+  height: 350px;
+  width: 400px;
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center 40px;
+  background-color: white;
+  color: black;
+  display: none;
+}
+.pc-header-top .top-left__notification .notification__off p {
+  text-align: center;
+  margin-top: 165px;
+}
+.pc-header-top .top-left__notification .notification__off-register {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  display: flex;
+  background-color: #f5f5f5;
+}
+.pc-header-top .top-left__notification .notification__off-register a {
+  cursor: pointer;
+  display: inline-block;
+  width: 200px;
+  padding: 10px 0px;
+  color: black;
+  border-radius: 2px;
+}
+.pc-header-top .top-left__notification .notification__off-register a:hover {
+  color: #ee4d2d;
+  background-color: #c0bdbd;
+}
+.pc-header-top .top-left__notification .notification__on-viewall {
+  display: block;
+  width: 100%;
 }
 
 .header-slider {
