@@ -3,6 +3,24 @@ $icon-w: 30px; // w ~ width
 $rs: 3px; //border-radius: 3px;
 $slider-btn-w: 8px;
 
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+    color: white;
+}
+
+
+.bold {
+    font-weight: bold;
+}
+.seperator {
+    height: 10px;
+    width: 2px;
+    background-color: white;
+}
+
 .m-header {
     overflow: hidden;
     background: linear-gradient(-180deg,#f53d2d,#f63);
@@ -62,18 +80,37 @@ $slider-btn-w: 8px;
     height: 120px;
     width: 100%;
     background: linear-gradient(-180deg,#f53d2d,#f63);
-
-
+    li {
+        margin: 8px 0px;
+        padding: 0px 8px;
+    }
     &-top {
+        display: flex;
+        font-size: 1.6rem;
+        // justify-content: space-between;
+
         .top-right {
+            display: flex;
+            margin-right: auto;
+            li {
+                border-right: 2px solid #ffffff38;
+            }
+                    
+            li:last-child {
+                border: none;
+            }
             .top-right-items {
+              
                 .top-right-items-icon {
 
                 }
             }
+            .top-right-items::before{
+
+            }
         }
         .top-left {
-
+            display: flex;
         }
     }
     &-mid {

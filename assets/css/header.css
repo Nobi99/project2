@@ -1,3 +1,17 @@
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: white; }
+
+.bold {
+  font-weight: bold; }
+
+.seperator {
+  height: 10px;
+  width: 2px;
+  background-color: white; }
+
 .m-header {
   overflow: hidden;
   background: linear-gradient(-180deg, #f53d2d, #f63);
@@ -47,6 +61,21 @@
   height: 120px;
   width: 100%;
   background: linear-gradient(-180deg, #f53d2d, #f63); }
+  .pc-header li {
+    margin: 8px 0px;
+    padding: 0px 8px; }
+  .pc-header-top {
+    display: flex;
+    font-size: 1.6rem; }
+    .pc-header-top .top-right {
+      display: flex;
+      margin-right: auto; }
+      .pc-header-top .top-right li {
+        border-right: 2px solid #ffffff38; }
+      .pc-header-top .top-right li:last-child {
+        border: none; }
+    .pc-header-top .top-left {
+      display: flex; }
 
 .header-slider {
   position: relative; }

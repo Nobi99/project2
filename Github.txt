@@ -11,3 +11,9 @@ git add .  // add all file in folder
 git commit -m <message>
 git remote add <remote name> <link repos>
 git remote rm <remote name> <link repos>
+
+# hiển thị danh sách remote trong git của project
+git remote -v
+
+# Thêm mới một remote vào git
+git remote add origin <url>
