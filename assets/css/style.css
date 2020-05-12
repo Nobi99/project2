@@ -111,17 +111,22 @@ a:active {
   width: 100%;
   background: linear-gradient(-180deg, #f53d2d, #f63);
   color: white;
+  margin-bottom: 15px;
 }
 .pc-header li {
   margin: 8px 0px;
   padding: 0px 8px;
+}
+.pc-header a {
+  display: inline-block;
+  height: 100%;
 }
 .pc-header-top {
   display: flex;
   font-size: 1.6rem;
   justify-content: space-between;
 }
-.pc-header-top li a:hover {
+.pc-header-top a:hover {
   color: rgba(255, 255, 255, 0.5);
 }
 .pc-header-top .top-right {
@@ -133,6 +138,66 @@ a:active {
 .pc-header-top .top-right li:last-child {
   border: none;
 }
+.pc-header-top .top-right li:first-child {
+  padding-left: 0;
+}
+.pc-header-top .top-right__download {
+  position: relative;
+}
+.pc-header-top .top-right__download .download__img-list {
+  position: absolute;
+  display: none;
+  height: auto;
+  width: 180px;
+  z-index: 1;
+  left: -34px;
+  top: 30px;
+  background-color: white;
+}
+.pc-header-top .top-right__download .download__img-list .download-img__qr {
+  width: 180px;
+}
+.pc-header-top .top-right__download .download__img-list .download__img-app {
+  display: flex;
+}
+.pc-header-top .top-right__download .download__img-list .download__img-app a {
+  width: 50%;
+  margin-bottom: 5px;
+}
+.pc-header-top .top-right__download .download__img-list .download__img-app a img {
+  width: 100%;
+}
+.pc-header-top .top-right__download .download__img-list .download__img-app a .left {
+  padding-top: 2px;
+  padding-left: 12px;
+  padding-right: 2px;
+}
+.pc-header-top .top-right__download .download__img-list .download__img-app a .right {
+  padding-right: 12px;
+  padding-left: 2px;
+}
+.pc-header-top .top-right__download .download__img-list::before {
+  position: absolute;
+  top: -20px;
+  right: 80px;
+  content: "";
+  height: 0;
+  width: 0;
+  border: 10px solid transparent;
+  border-bottom-color: white;
+}
+.pc-header-top .top-right__download::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 100%;
+  height: 30px;
+  cursor: pointer;
+}
+.pc-header-top .top-right__download:hover .download__img-list {
+  display: block;
+}
 .pc-header-top .top-left {
   display: flex;
 }
@@ -141,6 +206,9 @@ a:active {
 }
 .pc-header-top .top-left-items:hover {
   color: rgba(255, 255, 255, 0.5);
+}
+.pc-header-top .top-left-items:last-child {
+  padding-right: 0px;
 }
 .pc-header-top .top-left__notification {
   position: relative;
@@ -179,9 +247,76 @@ a:active {
   color: #ee4d2d;
   background-color: #c0bdbd;
 }
+.pc-header-top .top-left__notification .notification__on {
+  visibility: hidden;
+  background-color: white;
+  cursor: text;
+  color: black;
+  border-radius: 2px;
+  width: 400px;
+  box-shadow: -2px 0px 12px 3px rgba(160, 152, 152, 0.1);
+}
+.pc-header-top .top-left__notification .notification__on-num {
+  position: absolute;
+  display: inline-block;
+  background-color: white;
+  padding: 0px 3px;
+  border-radius: 45%;
+  top: -36px;
+  right: 68px;
+  visibility: visible;
+  text-align: center;
+}
+.pc-header-top .top-left__notification .notification__on-title {
+  padding: 8px;
+  color: #cac7c7;
+  font-size: 1.7rem;
+}
+.pc-header-top .top-left__notification .notification__on-content .content-list {
+  padding: 4px 8px;
+}
+.pc-header-top .top-left__notification .notification__on-content .content-list__link {
+  display: flex;
+}
+.pc-header-top .top-left__notification .notification__on-content .content-list__img {
+  width: 10%;
+  height: 10%;
+  padding-top: 3px;
+}
+.pc-header-top .top-left__notification .notification__on-content .content-list__text {
+  padding: 0px 10px;
+  width: 90%;
+  color: black;
+  text-align: justify;
+}
+.pc-header-top .top-left__notification .notification__on-content .content-list:hover {
+  background-color: rgba(209, 208, 208, 0.3);
+}
 .pc-header-top .top-left__notification .notification__on-viewall {
   display: block;
+  padding: 8px 0px;
+  font-size: 1.7rem;
   width: 100%;
+  color: black;
+  text-align: center;
+  background-color: rgba(209, 208, 208, 0.1);
+}
+.pc-header-top .top-left__notification .notification__on-viewall:hover {
+  background-color: rgba(209, 208, 208, 0.3);
+}
+.pc-header-top .top-left__notification:hover .notification__on-num {
+  display: none !important;
+}
+.pc-header-top .top-left__notification::after {
+  content: "";
+  width: 86px;
+  height: 15px;
+  position: absolute;
+  bottom: -15px;
+  right: 8px;
+}
+.pc-header-top .top-left__notification:hover .notification__on {
+  visibility: visible;
 }
 
 .header-slider {
