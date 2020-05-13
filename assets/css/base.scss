@@ -2,10 +2,12 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    color: black;
 }
 
 html {
     font-size: 62.5%;
+    color: black;
 }
 
 a,
@@ -16,5 +18,9 @@ a:link {
 ul {
     list-style: none;
     padding-top: 0px;
+}
+
+.flex {
+    display: flex;
 }
 

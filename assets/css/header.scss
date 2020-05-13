@@ -31,11 +31,18 @@ a:active {
 .seperator {
     border-right: 1px solid white !important;
 }
+
+
 .popover{
     position: absolute;
     z-index: 1;
+    border-radius: 2px;;
     right: 8px;
     top: 28px;
+}
+
+.popover--border {
+    border: 1px solid rgba(0,0,0,.09);
 }
 
 .popover::before{
@@ -147,7 +154,8 @@ a:active {
             }
             &-items {
                 &-icon {
-
+                    padding-right: 2.5px;
+                    padding-left: 5px;
                 }
             }
             &__download {
@@ -270,7 +278,6 @@ a:active {
                     background-color: white;
                     cursor: text;
                     color: black;
-                    border-radius: 2px;
                     width: 400px;
                     box-shadow: -2px 0px 12px 3px hsla(0, 4%, 61%, 0.1);
                     &-num {
@@ -339,7 +346,7 @@ a:active {
     }
     // header-mid
     &-mid {
-
+        position: relative;
         display: flex;
         &__logo {
             width: 200px;
@@ -404,6 +411,59 @@ a:active {
                 @extend .small-number;
                 right: 15px;
                 top: 6px;
+            }
+        }
+        .mid-cart__detail {
+            position: absolute;
+            top: 50px;
+            right: 3px;
+            width: 410px;
+            height: 400px;
+            background-color: white;
+            &-list{
+                img {
+                    $img-h: 50px;
+                    width: $img-h;
+                    height: $img-h;
+                    margin-right: 10px;
+                }
+                &-items {
+                    display: flex;
+                    font-size: 1.5rem;
+                    margin-bottom: 20px;
+                    .detail-prd {
+                        flex: 1;
+                        color: black;
+                        
+                        .flex-items {
+                            display: flex;
+                            justify-content: space-between;
+                            .right {
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                                -webkit-line-clamp: 1;
+                                -webkit-box-orient: vertical;
+                                display: -webkit-box;
+                            }
+                            .left {
+                                margin-left: 30px;
+                                color: $primary-c;
+                            }
+                        }
+                        .flex-bottom {
+                            margin-top: 6px;
+                            .left {
+                                margin-right: 10px;
+                                color: black;
+                            }
+                            .left:hover {
+                                color: $primary-c;
+                                cursor: pointer;
+                            }
+                        }
+
+                    }
+                }
             }
         }
     }
