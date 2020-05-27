@@ -13,15 +13,12 @@
 
 <body>
     
-        <header id="header">
+    <header id="header">
             <!-- mobile-header -->
-            <div class="m-header n-m-hide">
+            <div class="m-header m-hide">
                 <div class="grid wide">
                     <div class="row">
-                        <div class="col c-12 m-4 l-3 m-header-swapper">
-                            <!-- <span class="m-header__show-icon">
-                                <i class="fas fa-bars"></i>
-                            </span> -->
+                        <div class="col c-12 m-header-swapper">
                             <span class="m-header__search-icon">
                                 <i class="fas fa-search"></i>
                             </span>
@@ -29,10 +26,10 @@
                                 <input type="text" placeholder="Tìm Shoppe">
                             </form>
                             <span class="m-header__cart">
-                                <i class="fas fa-shopping-cart"></i>
+                                <i class="fas fa-shopping-cart t-white"></i>
                             </span>
                             <span class="m-header__user">
-                                <i class="far fa-user"></i>
+                                <i class="far fa-user t-white"></i>
                             </span>
                         </div>
                     </div>
@@ -40,7 +37,7 @@
             </div>
 
             <!-- PC header -->
-            <div class="pc-header">
+            <div class="pc-header show">
                 <div class="grid wide">
                     <div class="row">
                         <div class="col l-12 m-12 c-12">
@@ -51,7 +48,7 @@
                                         <a href="">Tải ứng dụng</a>
                                         <div class="download__img-list popover--border">
                                             <a href=""><img src="assets/img/dl_qr.png" alt="" class="download-img__qr"></a> 
-                                            <div class="download__img-app">
+                                            <div class="download__img-app flex">
                                                <a href=""><img src="assets/img/dl_google.png" alt="" class="left"></a> 
                                                <a href=""><img src="assets/img/dl_apple.png" alt="" class="right"></a>
                                             </div>
@@ -63,7 +60,7 @@
                                         <a href="#"><span class="top-right-items-icon"><i class="fab fa-instagram"></i></span></a>
                                     </li>
                                 </ul>
-                                <ul class="top-left">
+                                <ul class="top-left flex">
                                     <li class="top-left-items top-left__notification">
                                         <i class="far fa-bell"></i>
                                         Thông báo
@@ -78,7 +75,7 @@
                                         </div>
                                         <!-- Đã đăng nhập -->
                                         <div class="notification__on popover popover--border">
-                                            <span class="notification__on-num">6</span>
+                                            <span class="notification__on-num number--border">9</span>
                                             <p class="notification__on-title">Thông Báo Mới Nhận</p>
                                             <ul class="notification__on-content">
                                                 <li class="content-list">
@@ -128,6 +125,7 @@
                                     <li class="top-left-items bold"><a href="#">Đăng nhập</a></li>
                                 </ul>
                             </div> <!--End pc-header-top-->
+
                             <!-- pc-header-mid -->
                             <div class="pc-header-mid">
                                 <a href="#">
@@ -154,86 +152,79 @@
                                         </ul>
                                     </div>
                                 </div>
-                                <a class="mid-cart" href="#">
+                                <div class="mid-cart">
                                     <span class="mid-cart__icon"><i class="fas fa-shopping-cart"></i></span> 
-                                    <span class="mid-cart__num">99</span>                                 
-                                </a>
-                                <div class="mid-cart__detail popover popover--border">
-                                    <ul class="mid-cart__detail-list">
-                                        <li class="mid-cart__detail-list-items">
-                                            <img src="assets/img/cart_prd_1.jfif" alt="">
-                                            <div class="detail-prd">
-                                                <div class="flex-items flex-top">
-                                                    <p class="right">[Miễn Phí 6 Tháng] Sim Data 6GB/ngày - 180 GB/tháng Mua 1 tặng 1 sim Gift - Độc Quyền Vietnamobile</p>
-                                                    <p class="left">đ125.000</p>
+                                    <span class="mid-cart__num number--border">99</span>     
+                                    <div class="mid-cart__detail popover popover--border">
+                                        <ul class="mid-cart__detail-list">
+                                            <li class="mid-cart__detail-list-items">
+                                                <img src="assets/img/cart_prd_1.jfif" alt="">
+                                                <div class="detail-prd">
+                                                    <div class="flex-items flex-top">
+                                                        <p class="right">[Miễn Phí 6 Tháng] Sim Data 6GB/ngày - 180 GB/tháng Mua 1 tặng 1 sim Gift - Độc Quyền Vietnamobile</p>
+                                                        <p class="left">đ125.000</p>
+                                                    </div>
+                                                    
+                                                    <div class="flex-items flex-bottom">
+                                                        <p class="right">Phân loại hàng: Intel core i5</p>
+                                                        <p class="left">Xóa</p>
+                                                    </div>
                                                 </div>
-                                                
-                                                <div class="flex-items flex-bottom">
-                                                    <p class="right">Phân loại hàng: Intel core i5</p>
-                                                    <p class="left">Xóa</p>
+                                            </li>
+                                            <li class="mid-cart__detail-list-items no-mg-top">
+                                                <img src="assets/img/cart_prd_1.jfif" alt="">
+                                                <div class="detail-prd">
+                                                    <div class="flex-items flex-top">
+                                                        <p class="right">[Miễn Phí 6 Tháng] Sim Data 6GB/ngày - 180 GB/tháng Mua 1 tặng 1 sim Gift - Độc Quyền Vietnamobile</p>
+                                                        <p class="left">đ125.000</p>
+                                                    </div>
+                                                    
+                                                    <div class="flex-items flex-bottom">
+                                                        <p class="right">Phân loại hàng: Intel core i5</p>
+                                                        <p class="left">Xóa</p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </li>
-                                        <li class="mid-cart__detail-list-items">
-                                            <img src="assets/img/cart_prd_1.jfif" alt="">
-                                            <div class="detail-prd">
-                                                <div class="flex-items flex-top">
-                                                    <p class="right">[Miễn Phí 6 Tháng] Sim Data 6GB/ngày - 180 GB/tháng Mua 1 tặng 1 sim Gift - Độc Quyền Vietnamobile</p>
-                                                    <p class="left">đ125.000</p>
+                                            </li>
+                                            <li class="mid-cart__detail-list-items no-mg-top">
+                                                <img src="assets/img/cart_prd_1.jfif" alt="">
+                                                <div class="detail-prd">
+                                                    <div class="flex-items flex-top">
+                                                        <p class="right">[Miễn Phí 6 Tháng] Sim Data 6GB/ngày - 180 GB/tháng Mua 1 tặng 1 sim Gift - Độc Quyền Vietnamobile</p>
+                                                        <p class="left">đ125.000</p>
+                                                    </div>
+                                                    
+                                                    <div class="flex-items flex-bottom">
+                                                        <p class="right">Phân loại hàng: Intel core i5</p>
+                                                        <p class="left">Xóa</p>
+                                                    </div>
                                                 </div>
-                                                
-                                                <div class="flex-items flex-bottom">
-                                                    <p class="right">Phân loại hàng: Intel core i5</p>
-                                                    <p class="left">Xóa</p>
+                                            </li>
+                                            <li class="mid-cart__detail-list-items no-mg-top">
+                                                <img src="assets/img/cart_prd_1.jfif" alt="">
+                                                <div class="detail-prd">
+                                                    <div class="flex-items flex-top">
+                                                        <p class="right">[Miễn Phí 6 Tháng] Sim Data 6GB/ngày - 180 GB/tháng Mua 1 tặng 1 sim Gift - Độc Quyền Vietnamobile</p>
+                                                        <p class="left">đ125.000</p>
+                                                    </div>
+                                                    <div class="flex-items flex-bottom">
+                                                        <p class="right">Phân loại hàng: Intel core i5</p>
+                                                        <p class="left">Xóa</p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </li>
-                                        <li class="mid-cart__detail-list-items">
-                                            <img src="assets/img/cart_prd_1.jfif" alt="">
-                                            <div class="detail-prd">
-                                                <div class="flex-items flex-top">
-                                                    <p class="right">[Miễn Phí 6 Tháng] Sim Data 6GB/ngày - 180 GB/tháng Mua 1 tặng 1 sim Gift - Độc Quyền Vietnamobile</p>
-                                                    <p class="left">đ125.000</p>
-                                                </div>
-                                                
-                                                <div class="flex-items flex-bottom">
-                                                    <p class="right">Phân loại hàng: Intel core i5</p>
-                                                    <p class="left">Xóa</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="mid-cart__detail-list-items">
-                                            <img src="assets/img/cart_prd_1.jfif" alt="">
-                                            <div class="detail-prd">
-                                                <div class="flex-items flex-top">
-                                                    <p class="right">[Miễn Phí 6 Tháng] Sim Data 6GB/ngày - 180 GB/tháng Mua 1 tặng 1 sim Gift - Độc Quyền Vietnamobile</p>
-                                                    <p class="left">đ125.000</p>
-                                                </div>
-                                                
-                                                <div class="flex-items flex-bottom">
-                                                    <p class="right">Phân loại hàng: Intel core i5</p>
-                                                    <p class="left">Xóa</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <div class="mid-cart__detal-footer flex">
-                                        <p>Có 52 mặt hàng trong giỏ hàng</p>
-                                        <button>Xem tất cả</button>
-                                    </div>
+                                            </li>
+                                        </ul>
+                                        <div class="mid-cart__detail-footer flex--sp">
+                                            <p>Có 52 mặt hàng trong giỏ hàng</p>
+                                            <a class="btn btn--viewall bg-primary t-white" href="#">Xem tất cả</a>
+                                        </div>
+                                    </div>                            
                                 </div>
                                 
-
                             </div> <!--end pc-header-mid-->
                         </div>
                     </div>
                 </div> <!--End grid-wide-->
             </div> <!--End pc-header-->
-
-            
-                
-    
-
             <!-- slider -->
             
             <div class="header-slider">
@@ -262,6 +253,122 @@
                 </div>
             </div>
     </header>
+    <div class="grid wide">
+        <section class="category">
+            <p class="category__header">DANH MỤC</p>
+            <ul class="category-list flex">
+                <li class="category-list-items">
+                    <a class="items__link-top items__link">
+                        <div class="items__img" style="background-image: url(/assets/img/category_list_1.png); background-size: contain; background-repeat: no-repeat;"></div>
+                        <div class="items__text">Thời Trang Nam</div>
+                    </a>
+                    <a class="items__link-bottom items__link">
+                        <div class="items__img" style="background-image: url(/assets/img/category_list_2.png); background-size: contain; background-repeat: no-repeat;"></div>
+                        <div class="items__text">Thời Trang Nam</div>
+                    </a>
+                </li>
+                <li class="category-list-items">
+                    <a class="items__link-top items__link">
+                        <div class="items__img" style="background-image: url(/assets/img/category_list_1.png); background-size: contain; background-repeat: no-repeat;"></div>
+                        <div class="items__text">Thời Trang Nam</div>
+                    </a>
+                    <a class="items__link-bottom items__link">
+                        <div class="items__img" style="background-image: url(/assets/img/category_list_1.png); background-size: contain; background-repeat: no-repeat;"></div>
+                        <div class="items__text">Thời Trang Nam</div>
+                    </a>
+                </li>
+                <li class="category-list-items">
+                    <a class="items__link-top items__link">
+                        <div class="items__img" style="background-image: url(/assets/img/category_list_1.png); background-size: contain; background-repeat: no-repeat;"></div>
+                        <div class="items__text">Thời Trang Nam</div>
+                    </a>
+                    <a class="items__link-bottom items__link">
+                        <div class="items__img" style="background-image: url(/assets/img/category_list_1.png); background-size: contain; background-repeat: no-repeat;"></div>
+                        <div class="items__text">Thời Trang Nam</div>
+                    </a>
+                </li>
+                <li class="category-list-items">
+                    <a class="items__link-top items__link">
+                        <div class="items__img" style="background-image: url(/assets/img/category_list_1.png); background-size: contain; background-repeat: no-repeat;"></div>
+                        <div class="items__text">Thời Trang Nam</div>
+                    </a>
+                    <a class="items__link-bottom items__link">
+                        <div class="items__img" style="background-image: url(/assets/img/category_list_1.png); background-size: contain; background-repeat: no-repeat;"></div>
+                        <div class="items__text">Thời Trang Nam</div>
+                    </a>
+                </li>
+                <li class="category-list-items">
+                    <a class="items__link-top items__link">
+                        <div class="items__img" style="background-image: url(/assets/img/category_list_1.png); background-size: contain; background-repeat: no-repeat;"></div>
+                        <div class="items__text">Thời Trang Nam</div>
+                    </a>
+                    <a class="items__link-bottom items__link">
+                        <div class="items__img" style="background-image: url(/assets/img/category_list_1.png); background-size: contain; background-repeat: no-repeat;"></div>
+                        <div class="items__text">Thời Trang Nam</div>
+                    </a>
+                </li>
+                <li class="category-list-items">
+                    <a class="items__link-top items__link">
+                        <div class="items__img" style="background-image: url(/assets/img/category_list_1.png); background-size: contain; background-repeat: no-repeat;"></div>
+                        <div class="items__text">Thời Trang Nam</div>
+                    </a>
+                    <a class="items__link-bottom items__link">
+                        <div class="items__img" style="background-image: url(/assets/img/category_list_1.png); background-size: contain; background-repeat: no-repeat;"></div>
+                        <div class="items__text">Thời Trang Nam</div>
+                    </a>
+                </li>
+                <li class="category-list-items">
+                    <a class="items__link-top items__link">
+                        <div class="items__img" style="background-image: url(/assets/img/category_list_1.png); background-size: contain; background-repeat: no-repeat;"></div>
+                        <div class="items__text">Thời Trang Nam</div>
+                    </a>
+                    <a class="items__link-bottom items__link">
+                        <div class="items__img" style="background-image: url(/assets/img/category_list_1.png); background-size: contain; background-repeat: no-repeat;"></div>
+                        <div class="items__text">Thời Trang Nam</div>
+                    </a>
+                </li>
+                <li class="category-list-items">
+                    <a class="items__link-top items__link">
+                        <div class="items__img" style="background-image: url(/assets/img/category_list_1.png); background-size: contain; background-repeat: no-repeat;"></div>
+                        <div class="items__text">Thời Trang Nam</div>
+                    </a>
+                    <a class="items__link-bottom items__link">
+                        <div class="items__img" style="background-image: url(/assets/img/category_list_1.png); background-size: contain; background-repeat: no-repeat;"></div>
+                        <div class="items__text">Thời Trang Nam</div>
+                    </a>
+                </li>
+                <li class="category-list-items">
+                    <a class="items__link-top items__link">
+                        <div class="items__img" style="background-image: url(/assets/img/category_list_1.png); background-size: contain; background-repeat: no-repeat;"></div>
+                        <div class="items__text">Thời Trang Nam</div>
+                    </a>
+                    <a class="items__link-bottom items__link">
+                        <div class="items__img" style="background-image: url(/assets/img/category_list_1.png); background-size: contain; background-repeat: no-repeat;"></div>
+                        <div class="items__text">Thời Trang Nam</div>
+                    </a>
+                </li>
+                <li class="category-list-items">
+                    <a class="items__link-top items__link">
+                        <div class="items__img" style="background-image: url(/assets/img/category_list_1.png); background-size: contain; background-repeat: no-repeat;"></div>
+                        <div class="items__text">Thời Trang Nam</div>
+                    </a>
+                    <a class="items__link-bottom items__link">
+                        <div class="items__img" style="background-image: url(/assets/img/category_list_1.png); background-size: contain; background-repeat: no-repeat;"></div>
+                        <div class="items__text">Thời Trang Nam</div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </div>
+    
+
+    <section class="flash-sale">
+
+    </section>
+
+
+
 </body>
 <script src="assets/js/slider.js"></script>
+<script src="assets/js/base.js"></script>
 </html>

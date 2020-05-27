@@ -1,7 +1,10 @@
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
-  .n-m-hide {
+  .m-hide {
     display: none; }
+
+  .show {
+    display: block; }
 
   .header-slider .slider-control .slider-control__btn {
     height: 10px;
@@ -11,7 +14,10 @@
 /* Tablet & mobile  */
 /* PC */
 @media (min-width: 1024px) {
-  .n-m-hide {
+  .show {
+    display: block; }
+
+  .m-hide {
     display: none; }
 
   .header-slider .side-bar {

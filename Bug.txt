@@ -1,2 +1,4 @@
 - Khi nhấn vào btn của slider thì ngừng chạy hẳn -> theo logic thì ngừng chạy 1 thời gian xong tiếp tục chạy
-- Giao diện khi co về màn hình ipad pro thì xuất hiện lỗi (side bar bị thò thụt)
+- Giao diện khi co về màn hình ipad pro thì xuất hiện lỗi (side bar bị thò thụt) 
+- Danh mục -> li: width: 120 * 154
+img -> width: 100%, height: 100px;

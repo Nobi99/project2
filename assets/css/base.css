@@ -11,13 +11,64 @@ html {
 a,
 a:visited,
 a:link {
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
 
 ul {
   list-style: none;
   padding-top: 0px; }
 
 .flex {
-  display: flex; }
+  display: flex !important; }
+
+.flex--sp {
+  display: flex;
+  justify-content: space-between; }
+
+.t-white {
+  color: white !important; }
+
+.t-black {
+  color: black !important; }
+
+.bg-white {
+  color: white; }
+
+.t-primary {
+  color: #ee4d2d; }
+
+.bg-primary {
+  background-color: #ee4d2d; }
+
+.bold {
+  font-weight: bold; }
+
+.seperator {
+  border-right: 1px solid white !important; }
+
+.btn {
+  padding: 6px 12px; }
+
+.btn--viewall {
+  margin: 8px 8px;
+  font-size: 1.6rem; }
+
+.no-mg-bottom {
+  margin-bottom: 0px !important; }
+
+.no-mg-top {
+  margin-top: 0px !important; }
+
+.no-mg-right {
+  margin-right: 0px !important; }
+
+.no-mg-left {
+  margin-left: 0px !important; }
+
+.visible {
+  visibility: visible !important; }
+
+.number--border {
+  border: 1px solid #e6491a !important; }
 
 /*# sourceMappingURL=base.css.map */
