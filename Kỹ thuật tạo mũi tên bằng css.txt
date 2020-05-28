@@ -1,0 +1,12 @@
+- Một số thuộc tính border
+	border-style: 
+	border-width: 
+	border-color: 
+- border-with short hand: 25px 50px 75px;
+	top is 25px
+	right and left paddings are 50px
+	bottom is 75px
+
+- Tạo ra hình <mã giảm giá>
+	border-width: 0 27px 6px;
+        border-style: solid;

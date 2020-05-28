@@ -42,12 +42,12 @@ ul {
     color: black !important;
 }
 
-.bg-white {
-    color: white;
-}
 
 .t-primary {
     color: $primary-c;
+}
+.t-bold {
+    font-weight: bold;
 }
 
 .bg-primary {
@@ -97,4 +97,12 @@ ul {
 
 .number--border {
     border: 1px solid #e6491a !important;
+}
+
+.section--heading {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: bold;
 }

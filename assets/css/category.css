@@ -1,15 +1,12 @@
-.category__header {
-  font-size: 1.6rem;
-  margin-top: 25px;
-  margin-bottom: 15px; }
 .category-list {
-  height: 100%;
-  display: block; }
+  display: block;
+  width: 100%; }
 .category-list-items {
   width: 120px;
-  display: block; }
+  display: inline-block; }
   .category-list-items .items__link {
-    display: block;
+    display: inline-block;
+    width: 100%;
     height: 130px;
     border: 1px solid rgba(0, 0, 0, 0.03);
     border-left: none;
@@ -25,10 +22,78 @@
     background-position: center; }
   .category-list-items .items__text {
     text-align: center;
-    font-size: 1.3rem; }
+    font-size: 1.4rem; }
   .category-list-items .items__link-bottom {
     border-top: none; }
     .category-list-items .items__link-bottom .items__img {
       margin-top: 0px; }
+
+.fs .view--all {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  color: #ee4d2d;
+  margin-right: 30px; }
+  .fs .view--all span {
+    text-align: center;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    position: relative;
+    top: 1px;
+    border-radius: 50%;
+    background-color: #e6320e;
+    padding-top: 1px; }
+.fs-list-items {
+  width: 200px;
+  height: 246px;
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
+  position: relative; }
+  .fs-list-items .items__link {
+    text-align: center;
+    color: #ee4d2d;
+    font-size: 1.5rem; }
+    .fs-list-items .items__link .items__img {
+      margin: 0px auto;
+      margin-top: 6px;
+      width: 170px;
+      height: 170px; }
+    .fs-list-items .items__link .items__price {
+      font-size: 2rem;
+      margin-bottom: 5px;
+      font-weight: 600; }
+      .fs-list-items .items__link .items__price span {
+        font-size: 1.6rem; }
+    .fs-list-items .items__link .items__progress {
+      text-align: center;
+      border-radius: 10px;
+      width: 160px;
+      margin: 0 auto; }
+      .fs-list-items .items__link .items__progress p {
+        text-transform: uppercase; }
+    .fs-list-items .items__link .items__promotion {
+      width: 54px;
+      height: 50px;
+      background-color: rgba(255, 212, 36, 0.9);
+      position: absolute;
+      top: -1px;
+      right: 0;
+      font-size: 1.7rem; }
+      .fs-list-items .items__link .items__promotion p {
+        margin-top: 6px; }
+    .fs-list-items .items__link .items__promotion::before {
+      position: absolute;
+      bottom: -5px;
+      right: 0;
+      content: "";
+      height: 0;
+      width: 0;
+      border-width: 0 27px 6px;
+      border-style: solid;
+      border-color: transparent rgba(255, 212, 36, 0.9); }
+
+.banner__img {
+  height: 110px;
+  width: 100%; }
 
 /*# sourceMappingURL=category.css.map */
