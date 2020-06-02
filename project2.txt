@@ -1,7 +1,5 @@
 Xây dựng web-layout bán hàng online (shopee clone)
 
-
-
 Các kiến thức sử dụng 
 	+ Thiết kế web responsive
 	+ HTML + CSS

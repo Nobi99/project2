@@ -1,10 +1,8 @@
+@import 'base.scss';
 $primary-c: #ee4d2d; // c ~ color
 $icon-w: 30px; // w ~ width
 $rs: 3px; //border-radius: 3px;
 $slider-btn-w: 8px;
-
-
-
 
 a,
 a:visited,
@@ -360,6 +358,7 @@ a:active {
             flex: 1;
             border-radius: 2px;
             margin-right: 10px;
+            overflow: hidden;
             &__search-bar {
                 form {
                     display: flex;
@@ -455,11 +454,8 @@ a:active {
                             display: flex;
                             justify-content: space-between;
                             .right {
-                                text-overflow: ellipsis;
-                                overflow: hidden;
+                                @extend .t-continue;
                                 -webkit-line-clamp: 1;
-                                -webkit-box-orient: vertical;
-                                display: -webkit-box;
                             }
                             .left {
                                 margin-left: 30px;

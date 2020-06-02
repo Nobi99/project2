@@ -1,0 +1,95 @@
+$primary-c: #ee4d2d; // c ~ color
+$icon-w: 30px; // w ~ width
+$rs: 3px; //border-radius: 3px;
+$slider-btn-w: 8px;
+
+.prd {
+    &-recommend {
+        margin-bottom: 15px;
+    }
+
+
+    &-list {
+        &-items {
+            background-color: white;
+            height: 270px;
+            position: relative;
+            box-shadow: 0px 1px 0 0 rgba($color: #000000, $alpha: 0.09);
+            margin-bottom: 10px;
+            .items__promotion-label {
+                margin: 1px;
+                width: 40px;
+                height: 36px;
+                right: 0;
+                p {
+                    font-size: 1.2rem;
+                    margin-top: 4px;
+                }
+            }
+            .items__promotion-label::before {
+                border-width: 0 20px 6px;
+            }
+            .items__link {
+                .items__img {
+                    $hw: 180px;
+                    height: $hw;
+                    width: 100%;
+                    margin: 0 auto;
+                }
+                .items__text {
+                    margin: 0px 10px;
+                    &--top {
+                        font-size: 1.6rem;
+                        margin-top: 15px;
+                        margin-bottom: 8px;
+                        height: 36px;
+                        line-height: 18px;
+                    }
+                    &--bottom {
+                        align-items: baseline;
+                        .items__price {
+                            margin-right: auto;
+                            font-size: 1.6rem;
+                            font-weight: 700;
+                            span {
+                                font-size: 1.2rem;
+                            }
+                        }
+                        .items__bought {
+                            font-size: 1.3rem;
+                            color: rgba($color: #000000, $alpha: 0.6);
+                        }
+                    }
+                }
+            } 
+            
+        }
+        &-items:hover {
+            border: 1px solid $primary-c;
+            transition: transform 0.3s linear;
+            transform: translateY(-2px);
+        }
+        .view--more {
+            $line-hei: 40px;
+            width: 250px;
+            height: $line-hei;
+            border: 1px solid rgba($color: #000000, $alpha: 0.2);
+            margin: 20px auto;
+            line-height: $line-hei;
+            font-size: 1.6rem;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .view--more:hover {
+            background-color: rgba($color: #ecdbdb, $alpha: 0.3);
+        }
+    }
+    .row {
+        .prd-list-items:first-child {
+            margin-left: 5px;
+        }
+        .prd-list-items:last-child {
+            margin-right: 5px;
+        }
+    }
+}

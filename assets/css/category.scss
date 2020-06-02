@@ -1,7 +1,7 @@
 $primary-c: #ee4d2d;
 .category {
     &__header {
-      
+        padding-top: 15px;
     }
 
     &-list {
@@ -106,31 +106,7 @@ $primary-c: #ee4d2d;
                         text-transform: uppercase;
                     }
                 }
-                .items__promotion {
-                    $bg-color: rgba(255,212,36,.9);
-                    width: 54px;
-                    height: 50px;
-                    background-color: $bg-color;
-                    position: absolute;
-                    top: -1px;
-                    right: 0;
-                    font-size: 1.7rem;
-                    p {
-
-                        margin-top: 6px;
-                    }
-                }
-                .items__promotion::before {
-                    position: absolute;
-                    bottom: -5px;
-                    right: 0;
-                    content: "";
-                    height: 0;
-                    width: 0;
-                    border-width: 0 27px 6px;
-                    border-style: solid;
-                    border-color: transparent rgba(255,212,36,.9);
-                }
+                
             }
         }
     }
@@ -139,7 +115,8 @@ $primary-c: #ee4d2d;
 
 .banner {
     &__img {
-        height: 110px;
+        height: auto;
         width: 100%;
     }
 }
+

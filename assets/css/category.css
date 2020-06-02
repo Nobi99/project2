@@ -1,3 +1,5 @@
+.category__header {
+  padding-top: 15px; }
 .category-list {
   display: block;
   width: 100%; }
@@ -71,29 +73,9 @@
       margin: 0 auto; }
       .fs-list-items .items__link .items__progress p {
         text-transform: uppercase; }
-    .fs-list-items .items__link .items__promotion {
-      width: 54px;
-      height: 50px;
-      background-color: rgba(255, 212, 36, 0.9);
-      position: absolute;
-      top: -1px;
-      right: 0;
-      font-size: 1.7rem; }
-      .fs-list-items .items__link .items__promotion p {
-        margin-top: 6px; }
-    .fs-list-items .items__link .items__promotion::before {
-      position: absolute;
-      bottom: -5px;
-      right: 0;
-      content: "";
-      height: 0;
-      width: 0;
-      border-width: 0 27px 6px;
-      border-style: solid;
-      border-color: transparent rgba(255, 212, 36, 0.9); }
 
 .banner__img {
-  height: 110px;
+  height: auto;
   width: 100%; }
 
 /*# sourceMappingURL=category.css.map */

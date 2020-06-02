@@ -34,6 +34,10 @@ ul {
 }
 
 //class màu chữ
+.t-center {
+    text-align: center;
+}
+
 .t-white {
     color: white !important;
 }
@@ -49,10 +53,24 @@ ul {
 .t-bold {
     font-weight: bold;
 }
-
-.bg-primary {
-    background-color: $primary-c;
+.t-continue {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
 }
+
+
+.bg {
+    &-primary {
+        background-color: $primary-c;
+    }
+    &-white {
+        background-color: white;
+    }
+}
+
 
 .bold {
     font-weight: bold;
@@ -105,4 +123,67 @@ ul {
     margin-top: 25px;
     margin-bottom: 15px;
     font-weight: bold;
+    padding-left: 15px;
 }
+
+//promotion label
+.items__promotion-label {
+    $bg-color: rgba(255,212,36,.9);
+    width: 54px;
+    height: 50px;
+    background-color: $bg-color;
+    position: absolute;
+    top: -1px;
+    right: 8px;
+    font-size: 1.7rem;
+    p {
+        margin-top: 6px;
+    }
+    text-align: center;
+}
+.items__promotion-label::before {
+    position: absolute;
+    bottom: -5px;
+    right: 0px;
+    content: "";
+    height: 0;
+    width: 0;
+    border-width: 0 27px 6px;
+    border-style: solid;
+    border-color: transparent rgba(255,212,36,.9);
+}
+//favorite label
+
+.items__favorite-label {
+    background-color: $primary-c;
+    position: absolute;
+    $line-h: 18px;
+    width: 60px;
+    height: $line-h;
+    line-height: $line-h;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    top: 10px;
+    left: -4px
+}
+
+.items__favorite-label::before {
+    $hw: 3px;
+    border-color: $primary-c blue black transparent;
+    filter: brightness(60%);
+    border-width: $hw 0 0 $hw;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+}
+
+
+
+body {
+    background-color: #f7f2f2;
+}
+

@@ -1,0 +1,47 @@
+$primary-c: #ee4d2d; // c ~ color
+$t-color: rgba(39, 38, 38, 0.6);
+
+.footer {
+    a {
+        color: $t-color;
+        font-size: 1.4rem;
+    }
+}
+
+.footer-seperator {
+    width: 100%;
+    height: 5px;
+    margin-top: 50px;
+}
+
+.footer {
+    .section--heading {
+        padding-left: 0px;
+    }
+    .list-items {
+        display: block;
+        margin: 15px 0px;
+        color: $t-color;
+        font-size: 1.4rem;
+    }
+    .list-items a:hover {
+        color: $primary-c;
+    }
+    .about__list {
+        i {
+            margin-right: 4px;
+        }
+    }
+    &__payment {
+        .payment__list {
+            flex-wrap: wrap;
+        }
+        img {
+            margin-right: 5px;
+        }
+        .list-items {
+            margin: 5px;
+        }
+    }
+
+}
