@@ -10,3 +10,6 @@
 - Tạo ra hình <mã giảm giá>
 	border-width: 0 27px 6px;
         border-style: solid;
+
+- Tạo ra voucher border:
+background-image: radial-gradient(#fff 2px,transparent 0);

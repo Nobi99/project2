@@ -1,0 +1,84 @@
+.cart-infor {
+  border-radius: 3px;
+  font-size: 2.5rem;
+  padding: 20px;
+  width: 400px;
+  margin-bottom: 15px; }
+.cart-swapper {
+  padding: 20px;
+  margin-bottom: 10px; }
+.cart-action .continue-buy {
+  background-color: #05a; }
+.cart-action .payment {
+  margin-right: 20px; }
+.cart-action .cart__btn {
+  padding: 10px 20px;
+  border-radius: 3px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  color: white;
+  transition: transform 0.4s ease; }
+.cart-action .payment:hover {
+  transform: translateX(2px); }
+.cart-action .continue-buy:hover {
+  transform: translateX(-2px); }
+.cart-action .payment:active {
+  transform: translate(2px, 2px); }
+.cart-action .continue-buy:active {
+  transform: translate(-2px, 2px); }
+.cart-prd-list-items {
+  padding: 14px 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-width: 1px 0 1px 0; }
+  .cart-prd-list-items .left {
+    margin-left: 5px;
+    width: 76%; }
+  .cart-prd-list-items .right {
+    font-size: 1.6rem; }
+  .cart-prd-list-items .prd {
+    font-size: 1.6rem; }
+    .cart-prd-list-items .prd__img {
+      width: 70px;
+      margin: 0 10px; }
+    .cart-prd-list-items .prd__quantity {
+      margin: 0 15px; }
+.cart-money {
+  font-size: 1.8rem;
+  padding: 20px; }
+  .cart-money .check-all {
+    width: 76%; }
+  .cart-money .check-all .checker-all {
+    margin: 0 5px; }
+
+.no-cart {
+  font-size: 2rem; }
+  .no-cart .no-cart-img {
+    height: 650px;
+    background-position: center; }
+  .no-cart p {
+    margin-bottom: 30px; }
+  .no-cart .btn--return {
+    display: block;
+    border-radius: 3px;
+    padding: 16px;
+    transition: transform 0.2s ease;
+    width: 250px; }
+  .no-cart .btn--return:hover {
+    transform: translateX(-3px); }
+  .no-cart .btn--return:active {
+    transform: translate(-3px, 3px); }
+
+.other__heading {
+  margin-bottom: 10px; }
+  .other__heading-logo {
+    width: 180px;
+    height: 50px;
+    margin: 10px 20px; }
+  .other__heading-title {
+    font-size: 2.2rem;
+    border-left: 1.5px solid #ee4d2d;
+    padding: 10px;
+    padding-left: 20px; }
+
+/*# sourceMappingURL=cart.css.map */

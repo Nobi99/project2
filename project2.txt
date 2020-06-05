@@ -14,18 +14,18 @@ Các kiến thức sử dụng
 	+
 2. Xây dựng các web-component
 	+ Sticky menu.
-	+ Footer.
-	+ Header.
+	+ Footer. (done)
+	+ Header. (done)
 	+ Nav-bar.
 	+ Slider. (done) 
 3. Các layout cơ bản: 
-	Front-end	+ Trang chủ.
-			+ Trang sản phẩm 
-			+ Trang chi tiết sản phẩm.
+	Front-end	+ Trang chủ. (done)
+			+ Trang sản phẩm (theo danh mục)
+			+ Trang chi tiết sản phẩm. (chưa có phần gợi ý sản phẩm)
 			+ Trang giỏ hàng.
 			+ Trang thanh toán.
-			+ Trang đăng nhập.
-			+ Trang đăng ký.
+			+ Trang đăng nhập. (done)
+			+ Trang đăng ký. (done)
 			+ 404 not found
 
 	Backend		+ Trang admin đăng nhập.
@@ -33,6 +33,7 @@ Các kiến thức sử dụng
 			+ Trang quản lý doanh thu.
 			+ Quản lý nhân viên.
 			+ Quản lý đơn hàng.
+4. Xây dựng backend
 
 		
 

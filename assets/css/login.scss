@@ -1,0 +1,67 @@
+
+
+.login {
+    width: 600px;
+    font-size: 1.8rem;
+    margin: 100px auto;
+    padding-bottom: 60px;
+    border-radius: 3px;
+    .heading {
+        font-size: 2rem;
+    }
+
+    .form {
+        flex-direction: column;
+        margin: 20px 60px;
+    }
+    input {
+        font-size: 1.8rem;
+       margin: 10px 0;
+       outline: none;
+       height: 50px;
+       border-radius: 30px;
+       border: 1px solid black;
+       padding: 3px 20px;
+    }
+
+    input[type="password"] {
+        margin-bottom: 5px;
+    }
+
+    .addition {
+        margin-top: 5px;
+        .remember-pass {
+            color: #05a;
+        }
+        input[type="checkbox"] {
+            $hw: 12px;
+            width: $hw;
+            height: $hw;
+            margin: 0;
+            justify-content: space-between;
+            margin-right: 3px;
+            background-color: #eee;
+        }
+    }
+
+    .btn--submit {
+        height: 50px;
+        margin: 0 auto;
+        width: 250px;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        border-radius: 3px;
+        border: none;
+        font-size: 1.8rem;
+        color: white;
+        background-color: #ee4d2d;
+    }
+
+    input:focus {
+        border: 1px solid #ee4d2d;
+    }
+}
+
+.register {
+
+}

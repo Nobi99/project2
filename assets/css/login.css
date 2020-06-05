@@ -1,0 +1,47 @@
+.login {
+  width: 600px;
+  font-size: 1.8rem;
+  margin: 100px auto;
+  padding-bottom: 60px;
+  border-radius: 3px; }
+  .login .heading {
+    font-size: 2rem; }
+  .login .form {
+    flex-direction: column;
+    margin: 20px 60px; }
+  .login input {
+    font-size: 1.8rem;
+    margin: 10px 0;
+    outline: none;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid black;
+    padding: 3px 20px; }
+  .login input[type="password"] {
+    margin-bottom: 5px; }
+  .login .addition {
+    margin-top: 5px; }
+    .login .addition .remember-pass {
+      color: #05a; }
+    .login .addition input[type="checkbox"] {
+      width: 12px;
+      height: 12px;
+      margin: 0;
+      justify-content: space-between;
+      margin-right: 3px;
+      background-color: #eee; }
+  .login .btn--submit {
+    height: 50px;
+    margin: 0 auto;
+    width: 250px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: none;
+    font-size: 1.8rem;
+    color: white;
+    background-color: #ee4d2d; }
+  .login input:focus {
+    border: 1px solid #ee4d2d; }
+
+/*# sourceMappingURL=login.css.map */

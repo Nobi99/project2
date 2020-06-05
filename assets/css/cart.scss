@@ -1,0 +1,129 @@
+.cart {
+    &-infor {
+        border-radius: 3px;
+        font-size: 2.5rem;
+        padding: 20px;
+        width: 400px;
+        margin-bottom: 15px;
+    }
+    &-swapper {
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+
+    &-action {
+        .continue-buy {
+            background-color: #05a;
+        }
+        .payment {
+            margin-right: 20px;
+        }
+
+        .cart__btn {
+            padding: 10px 20px;
+            border-radius: 3px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+            color: white; 
+            transition: transform 0.4s ease;
+        }
+
+        .payment:hover {
+            transform: translateX(2px);
+        }
+
+        .continue-buy:hover {
+            transform: translateX(-2px);
+        }
+
+        .payment:active {
+            transform: translate(2px, 2px);
+        }
+
+        .continue-buy:active {
+            transform: translate(-2px, 2px);
+        }
+    }
+
+    
+    &-prd-list {
+        &-items {
+            padding: 14px 0; 
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-width: 1px 0 1px 0;   
+            .left {
+                margin-left: 5px;
+                width: 76%;
+            }
+            .right {
+                font-size: 1.6rem;
+            }
+
+            .prd {
+                font-size: 1.6rem;
+                &__img {
+                    width: 70px;
+                    margin: 0 10px;
+                }
+                &__quantity {
+                    margin: 0 15px;
+                }
+            }
+        }
+    }
+
+    &-money {
+        font-size: 1.8rem;
+        padding: 20px;
+        .check-all {
+            width: 76%;
+        }
+
+        .check-all {
+            .checker-all {
+                margin: 0 5px;
+            }
+        }
+    }
+}
+
+.no-cart {
+    .no-cart-img {
+        height: 650px;
+        background-position: center;
+    }
+    font-size: 2rem;
+    p {
+        margin-bottom: 30px;
+    }
+    .btn--return {
+        display: block;
+        border-radius: 3px;
+        padding: 16px;
+        transition: transform 0.2s ease;
+        width: 250px;
+    }
+    .btn--return:hover {
+        transform: translateX(-3px);
+    }
+
+    .btn--return:active {
+        transform: translate(-3px, 3px);
+    }
+}
+
+.other__heading {
+    margin-bottom: 10px;
+    &-logo {
+        width: 180px;
+        height: 50px;
+        margin: 10px 20px;
+    } 
+    &-title {
+        font-size: 2.2rem;
+        border-left: 1.5px solid #ee4d2d;
+        padding: 10px;
+        padding-left: 20px;
+    }
+}

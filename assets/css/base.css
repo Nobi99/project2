@@ -34,8 +34,17 @@ ul {
 .t-black {
   color: black !important; }
 
+.mr-auto {
+  margin-right: auto; }
+
+.mg-auto {
+  margin: 0 auto; }
+
+.t-blue {
+  color: #05a; }
+
 .t-primary {
-  color: #ee4d2d; }
+  color: #ee4d2d !important; }
 
 .t-bold {
   font-weight: bold; }
@@ -47,10 +56,16 @@ ul {
   -webkit-box-orient: vertical;
   display: -webkit-box; }
 
+.t-underline {
+  text-decoration: underline !important; }
+
 .bg-primary {
   background-color: #ee4d2d; }
 .bg-white {
   background-color: white; }
+
+.d-block {
+  display: block; }
 
 .bold {
   font-weight: bold; }
@@ -59,11 +74,18 @@ ul {
   border-right: 1px solid white !important; }
 
 .btn {
-  padding: 6px 12px; }
+  padding: 6px 12px;
+  outline: none;
+  border: none;
+  cursor: pointer; }
 
 .btn--viewall {
   margin: 8px 8px;
   font-size: 1.6rem; }
+
+.btn--add-to-cart {
+  border: 1px solid #ee4d2d;
+  background: rgba(255, 87, 34, 0.1); }
 
 .no-mg-bottom {
   margin-bottom: 0px !important; }
@@ -76,6 +98,12 @@ ul {
 
 .no-mg-left {
   margin-left: 0px !important; }
+
+.no-bd-right {
+  border-right: none; }
+
+.no-bd-left {
+  border-left: none; }
 
 .visible {
   visibility: visible !important; }
@@ -137,7 +165,46 @@ ul {
   bottom: -3px;
   left: 0; }
 
+.items-center {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
 body {
   background-color: #f7f2f2; }
+
+.prd__quantity .btn__math {
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  line-height: 30px;
+  padding: 0 6px;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 300; }
+.prd__quantity .choose-number {
+  font-size: 1.6rem;
+  width: 50px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-width: 1px 0;
+  outline: none; }
+
+.other__heading {
+  margin-bottom: 10px; }
+  .other__heading-logo {
+    width: 180px;
+    height: 50px;
+    margin: 10px 20px; }
+  .other__heading-title {
+    font-size: 2.2rem;
+    border-left: 1.5px solid #ee4d2d;
+    padding: 10px;
+    padding-left: 20px; }
+
+.hide {
+  display: none;
+  visibility: hidden; }
 
 /*# sourceMappingURL=base.css.map */

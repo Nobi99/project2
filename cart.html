@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <title>Trang chủ</title>
+</head>
+
+<body>
+    <header id="header">
+        <!-- mobile-header -->
+        <div class="m-header m-hide">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col c-12 m-header-swapper">
+                        <span class="m-header__search-icon">
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <form action="" class="m-header__search-form">
+                            <input type="text" placeholder="Tìm Shoppe">
+                        </form>
+                        <span class="m-header__cart">
+                            <i class="fas fa-shopping-cart t-white"></i>
+                        </span>
+                        <span class="m-header__user">
+                            <i class="far fa-user t-white"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PC header -->
+        <div class="pc-header show cart-page__header">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-12 m-12 c-12">
+                        <div class="pc-header-top">
+                            <ul class="top-right">
+                                <li class="top-right-items"><a href="#">Kênh người bán</a></li>
+                                <li class="top-right-items top-right__download">
+                                    <a href="">Tải ứng dụng</a>
+                                    <div class="download__img-list popover--border">
+                                        <a href=""><img src="assets/img/dl_qr.png" alt="" class="download-img__qr"></a> 
+                                        <div class="download__img-app flex">
+                                           <a href=""><img src="assets/img/dl_google.png" alt="" class="left"></a> 
+                                           <a href=""><img src="assets/img/dl_apple.png" alt="" class="right"></a>
+                                        </div>
+                                        
+                                    </div>
+                                </li>
+                                <li class="top-right-items">Kết nối 
+                                    <a href="#"><span class="top-right-items-icon"><i class="fab fa-facebook"></i></span></a>
+                                    <a href="#"><span class="top-right-items-icon"><i class="fab fa-instagram"></i></span></a>
+                                </li>
+                            </ul>
+                            <ul class="top-left flex">
+                                <li class="top-left-items top-left__notification">
+                                    <i class="far fa-bell"></i>
+                                    Thông báo
+
+                                    <!-- Chưa đăng nhập -->
+                                    <div class="notification__off popover" style="background-image: url(assets/img/notification.png);">
+                                        <p>Hãy đăng nhập để xem thông báo</p>
+                                        <div class="notification__off-register">
+                                            <a>Đăng nhập</a>
+                                            <a>Đăng kí</a>
+                                        </div>
+                                    </div>
+                                    <!-- Đã đăng nhập -->
+                                    <div class="notification__on popover popover--border">
+                                        <span class="notification__on-num number--border">9</span>
+                                        <p class="notification__on-title">Thông Báo Mới Nhận</p>
+                                        <ul class="notification__on-content">
+                                            <li class="content-list">
+                                                <a href="#" class="content-list__link">
+                                                    <img src="assets/img/nf_1.png" alt="" class="content-list__img">
+                                                    <p class="content-list__text">
+                                                        <span class="bold">Thông báo từ shoppe game</span> <br>
+                                                        Với công nghệ mới,  mang đến các tẩy trang, 
+                                                        làm sạch, giữ ẩm và dưỡng mềm da đồng thời chỉ trong một sản phẩm. 
+                                                        
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class="content-list">
+                                                <a href="#" class="content-list__link">
+                                                    <img src="assets/img/nf_2.jfif" alt="" class="content-list__img">
+                                                    <p class="content-list__text">
+                                                        <span class="bold">Tặng mã hoàn 25k xu cho game bay cùng shoppe</span> <br>
+                                                        Với công nghệ mới,  mang đến các tẩy trang, 
+                                                        làm sạch, giữ ẩm và dưỡng mềm da đồng thời chỉ trong một sản phẩm.                                               
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class="content-list">
+                                                <a href="#" class="content-list__link">
+                                                    <img src="assets/img/nf_1.png" alt="" class="content-list__img">
+                                                    <p class="content-list__text">
+                                                        <span class="bold">Thông báo từ Nivia</span> <br>
+                                                        Với công nghệ mới,  mang đến các tẩy trang, 
+                                                        làm sạch, giữ ẩm và dưỡng mềm da đồng thời chỉ trong một sản phẩm. 
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </ul>  <!-- End notification__on-content -->
+                                        
+                                        <a href="#" class="notification__on-viewall">Xem tất cả</a>
+
+                                    </div>
+                                </li>
+                                <li class="top-left-items">
+                                    <a href="">
+                                        <i class="far fa-question-circle"></i>
+                                        Trợ giúp
+                                    </a>
+                                </li>
+                                <li class="top-left-items bold seperator"><a href="#">Đăng kí</a></li>
+                                <li class="top-left-items bold"><a href="#">Đăng nhập</a></li>
+                            </ul>
+                        </div> <!--End pc-header-top-->
+                    </div>
+                </div>
+            </div> <!--End grid-wide-->
+        </div> <!--End pc-header-->
+    </header>
+    <div class="cart__heading bg-white">
+        <div class="grid wide flex items-center">
+            <div class="cart__heading-logo" style="background-image: url(assets/img/logo_2.png); background-repeat: no-repeat; background-size: contain;"></div>
+            <p class="cart__heading-title t-primary">Giỏ hàng</p>
+        </div>
+    </div>
+    <!-- Cart -->
+    <section class="cart">
+        <div class="grid wide">
+            <div class="cart-swapper bg-white">
+                <p class="cart-infor mg-auto t-center bg-primary t-white t-bold">
+                    Thông tin giỏ hàng
+                </p>
+                
+                <div class="row">
+                    <div class="col l-12">
+                        <div class="cart-prd-list">
+                            <div class="cart-prd-list-items flex items-center">
+                                <div class="left flex">
+                                    <div class="checker items-center flex">
+                                        <input type="checkbox" name="addToPay">
+                                    </div>
+                                    <div class="prd flex items-center">
+                                        <img class="prd__img" src="./assets/img/prd-1.jpg">
+                                        <p class="prd__name">Son kem lì lalalia</p>
+                                    </div>
+                                </div>
+            
+                                <div class="right flex items-center">
+                                    <p class="prd__price">
+                                        ₫ 360.000
+                                    </p>
+                                    <div class="prd__quantity flex">
+                                        <p class="btn__math btn__math--sub"><i class="fas fa-minus"></i></p>
+                                        <input class="choose-number t-center" type="text" value="1">
+                                        <p class="btn__math btn__math--add"><i class="fas fa-plus"></i></p>
+                                    </div>
+                                    <div class="prd__action">
+                                        <a href="#">
+                                            <i class="far fa-trash-alt" style="color: #d00"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-prd-list-items flex items-center">
+                                <div class="left flex">
+                                    <div class="checker items-center flex">
+                                        <input type="checkbox" name="addToPay">
+                                    </div>
+                                    <div class="prd flex items-center">
+                                        <img class="prd__img" src="./assets/img/prd-1.jpg">
+                                        <p class="prd__name">Son kem lì lalalia</p>
+                                    </div>
+                                </div>
+            
+                                <div class="right flex items-center">
+                                    <p class="prd__price">
+                                        ₫ 360.000
+                                    </p>
+                                    <div class="prd__quantity flex">
+                                        <p class="btn__math btn__math--sub"><i class="fas fa-minus"></i></p>
+                                        <input class="choose-number t-center" type="text" value="1">
+                                        <p class="btn__math btn__math--add"><i class="fas fa-plus"></i></p>
+                                    </div>
+                                    <div class="prd__action">
+                                        <a href="#">
+                                            <i class="far fa-trash-alt" style="color: #d00"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-prd-list-items flex items-center">
+                                <div class="left flex">
+                                    <div class="checker items-center flex">
+                                        <input type="checkbox" name="addToPay">
+                                    </div>
+                                    <div class="prd flex items-center">
+                                        <img class="prd__img" src="./assets/img/prd-1.jpg">
+                                        <p class="prd__name">Son kem lì lalalia</p>
+                                    </div>
+                                </div>
+            
+                                <div class="right flex items-center">
+                                    <p class="prd__price">
+                                        ₫ 360.000
+                                    </p>
+                                    <div class="prd__quantity flex">
+                                        <p class="btn__math btn__math--sub"><i class="fas fa-minus"></i></p>
+                                        <input class="choose-number t-center" type="text" value="1">
+                                        <p class="btn__math btn__math--add"><i class="fas fa-plus"></i></p>
+                                    </div>
+                                    <div class="prd__action">
+                                        <a href="#">
+                                            <i class="far fa-trash-alt" style="color: #d00"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            
+            <div class="cart-money flex items-center bg-white">
+                <div class="check-all flex items-center">
+                    <input type="checkbox" name="checkAll" id="" class="checker-all">
+                    <p>Chọn tất cả</p>
+                </div>
+                <div class="cart-money__total">
+                    <p>Tổng tiền: <span class="t-primary t-bold">₫ 1.080.000</span></p>
+                </div>
+            </div>
+
+            <div class="cart-action flex bg-white">
+                <a class="continue-buy mr-auto cart__btn t-bold" href="#">
+                    <i class="fas fa-arrow-circle-left t-white"></i>
+                    Tiếp tục mua sắm
+                </a>
+                <a class="payment bg-primary cart__btn t-bold" href="#">
+                    Thanh toán
+                    <i class="fas fa-arrow-circle-right t-white"></i>
+                </a>
+            </div>
+        </div>
+    </section> <!--End Cart-->
+
+    <section class="no-cart t-center">
+        <div class="no-cart-img" style="background-image: url(assets/img/no-cart.png); background-repeat: no-repeat; background-size: content;"></div>
+        <p class="">Không có sản phẩm nào trong giỏ hàng.</p>
+
+        
+        <a href="" class="btn bg-primary btn--return mg-auto t-bold">
+            <i class="fas fa-arrow-circle-left t-white"></i>
+            Quay lại trang chủ
+        </a>
+
+    </section>
+
+    
+    <div class="footer-seperator bg-primary"></div>
+    <footer class="footer">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-3 m-3 c-3 footer__care">
+                    <p class="section--heading">
+                        Chăm sóc khách hàng
+                    </p>
+                    <ul class="care__list">
+                        <li class="list-items">
+                            <a href="#">Trung tâm trợ giúp</a>
+                        </li>
+                        <li class="list-items">
+                            <a href="#">Thanh toán</a>
+                        </li>
+                        <li class="list-items">
+                            <a href="#">Trả hàng, hoàn tiền</a>
+                        </li>
+                        <li class="list-items">
+                            <a href="#">Hướng dẫn mua hàng</a>
+                        </li>
+                        <li class="list-items">
+                            <a href="#">Chính sách bảo hành</a>
+                        </li>
+                        <li class="list-items">
+                            <a href="#">Hướng dẫn mua hàng</a>
+                        </li>
+                        <li class="list-items">
+                            <a href="#">Trung tâm trợ giúp</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l-3 m-3 c-3 footer__about">
+                    <p class="section--heading">
+                        Về Nobmi
+                    </p>
+                    <ul class="about__list">
+                        <li class="list-items">
+                            <a href="#">Giới thiệu NobMi</a>
+                        </li>
+                        <li class="list-items">
+                            <a href="#">Liên hệ với chúng tôi</a>
+                        </li>
+                        <li class="list-items">
+                            <a href="#"></a>
+                        </li>
+                        <li class="list-items">
+                            <a href="#">Tuyển dụng</a>
+                        </li>
+                        <li class="list-items">
+                            <a href="#">Điều khoản</a>
+                        </li>
+                        <li class="list-items">
+                            <a href="#">Chính sách bảo mật</a>
+                        </li>
+                        <li class="list-items">
+                            <a href="#">Flash sale</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l-3 m-3 c-3 footer__payment">
+                    <p class="section--heading">
+                        Thanh toán
+                    </p>
+                    <ul class="payment__list flex">
+                        <li class="list-items">
+                            <img src="./assets/img/footer-visa.png" alt="" style="width: 70px;">
+                        </li>
+                        <li class="list-items">
+                            <img src="./assets/img/footer-master.png" alt="" style="width: 70px;">
+                        </li>
+                        <li class="list-items">
+                            <img src="./assets/img/footer-airpay.png" alt="" style="width: 70px;">
+                        </li>
+                        <li class="list-items">
+                            <img src="./assets/img/footer-tra-gop.png" alt="" style="width: 70px;">
+                        </li>
+                        <li class="list-items">
+                            <img src="./assets/img/footer-jcb.png" alt="" style="width: 70px;">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l-3 m-3 c-3 footer__follow">
+                    <p class="section--heading">
+                        Theo dõi chúng tôi trên
+                    </p>
+                    <ul class="about__list">
+                        <li class="list-items">
+                            <a href="#"><i class="fab fa-facebook"></i>Trên facebook</a>
+                        </li>
+                        <li class="list-items">
+                            <a href="#"><i class="fab fa-instagram"></i>Trên instagram</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<script>
+    "use strict"
+
+    var addB = document.querySelectorAll(".btn__math--add"); // add btn
+    var subB = document.querySelectorAll(".btn__math--sub"); // sub btn
+    var checkbox = document.getElementsByName("addToPay");
+    var len = addB.length;
+    var i = 0;
+    var preE;
+    var checkVal;
+
+    // nut check all 
+    var checkAll = document.querySelector(".checker-all");
+    checkAll.addEventListener("click", function(){
+        if(checkAll.checked === true) {
+            checkVal = true;
+        }
+        else {
+            checkVal = false;
+        }
+        for (i = 0; i < checkbox.length; i++) {
+            checkbox[i].checked = checkVal;
+        }
+    });
+    
+
+    
+    for(i = 0; i < len; i++) {
+        addB[i].addEventListener("click", function(){
+            preE = this.previousElementSibling;
+            var plus = preE.value;
+            preE.value = ++plus;
+        });
+    }
+
+    for(i = 0; i < len; i++) {
+        subB[i].addEventListener("click", function(){
+            preE = this.nextElementSibling;
+            var minor = preE.value;
+            if (minor > 1) {
+                preE.value = --minor;
+                preE.createAtribute
+            }
+            else {
+                alert("Giá trị phải > 0");
+            }
+            
+        });
+    }
+
+
+</script>

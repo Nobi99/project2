@@ -1,0 +1,172 @@
+$t-color-blur: rgba(0,0,0,.4);
+$prd-t-color: #ee4d2d;
+.prd__view {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    &-img {
+        
+        .img__main {
+            $hw: 450px;
+            width: $hw;
+            height: $hw;
+            margin: 10px auto;
+        }
+        .img__list {
+            margin-left: 15px;
+            margin-bottom: 10px;
+            &-items {
+                box-sizing: border-box;
+                $hw-sm: 84px;
+                width: $hw-sm;
+                height: $hw-sm;
+                margin: 0 4px;
+            }
+            &-items:hover {
+                border: 2px solid #ee4d2d;
+            }
+        }
+    }
+
+    &-parameter {
+        font-size: 1.8rem;
+        .prd__choosen-text {
+            font-size: 1.6rem;
+            width: 110px;
+            color: $t-color-blur;
+        }
+        .prd__choosen-detail {
+            margin-left: 20px;
+        }
+        .parameter-items {
+            margin-bottom: 20px;
+        }
+        .prd__name {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-top: 15px;
+        }
+        .prd__vote {
+            &-items {
+                padding: 5px;
+            }
+            span {
+                color: $t-color-blur;
+                font-weight: 600;
+                font-size: 1.7rem;
+            }
+            .seperator {
+                padding-right: 20px;
+                margin-left: 19px;
+                border-right: 1.5px solid rgba(0, 0, 0, .2) !important;
+            }
+            .seperator:first-child {
+                margin-left: 0;
+            }
+            .seperator:last-child {
+                border-right: none !important;
+            }
+        }
+        .prd__discount {
+            $line-hw: 50px;
+            background-color: rgb(235, 235, 235);
+            height: $line-hw;
+            width: calc(100% - 50px);
+            // line-height: $line-hw;
+            font-size: 3rem;
+            .small-text {
+                color: #929292;
+                text-decoration: line-through;
+                font-size: 2rem;
+                margin: 0 20px;
+            }
+        }
+        
+        .prd__choosen {
+            .choosen-items {
+                margin-bottom: 30px;
+                font-size: 1.9rem;
+                font-weight: 600;
+            }
+            .prd__voucher {
+                .prd__choosen-detail {
+                    position: relative;
+                    background-color: #FBEBED;
+                    padding: 6px;
+                    border-radius: 2px;
+                }
+            }
+            .prd__deal {
+
+            }
+            .prd__delivery {
+                .prd__choosen-detail {
+                   .delivery__icon-fs {
+                       width: 26px;
+                       margin-right: 4px;
+                   }
+                   .delivery__text {
+                       display: inline-block;
+                       font-weight: 400;
+                       font-size: 1.6rem;
+                   }
+                   .small-text {
+                        color: $t-color-blur;
+                        margin-left: 35px;
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+            .prd__weight {
+                .prd__choosen-detail {
+                    .detail-list {
+                        padding: 10px;
+                        display: block;
+                        border: 1px solid rgba(0,0,0,.09);
+                        margin-right: 10px;
+                        background-color: white;
+                        cursor: pointer;
+                    }
+                    .detail-list:hover {
+                        color: $prd-t-color;
+                        border-color: $prd-t-color;
+                    }
+                } 
+            }
+            
+        }
+        .prd__buy-btn {
+            .btn {
+                font-size: 1.5rem;
+                padding: 10px 12px;
+                width: 200px;
+                height: 40px;
+                margin-right: 20px;
+                border-radius: 3px;
+            }
+            .btn--add-to-cart:hover {
+                background: rgba(255,87,34,.15);
+                
+            }
+            .btn--buy-now:hover {
+                background-color: #c95842;
+            }
+        }
+
+    }
+}
+
+.prd__infor {
+    padding: 20px;
+    &-heading {
+       padding-left: 25px !important;
+       padding: 20px 15px;
+       background-color: rgba(0, 0, 0, .09);
+    }
+
+    &-main {
+        white-space: pre-wrap;
+        padding-left: 25px;
+        line-height: 2.6rem;
+        font-size: 1.6rem;
+    }
+}
