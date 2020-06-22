@@ -34,6 +34,18 @@ Các kiến thức sử dụng
 			+ Quản lý nhân viên.
 			+ Quản lý đơn hàng.
 4. Xây dựng backend
+Các bảng cơ sở dữ liệu:
+	- Product
+	- Cart
+	- Category
+	- Product_size
+	- Product_order
+	- Orders
+	- Users
+	- Notifications
+5. Sử dụng ajax kết hợp vs Laravel
+
+
 
 		
 

@@ -50,6 +50,7 @@ $primary-c: #ee4d2d;
 }
 
 .fs {
+    margin-bottom: 10px;
     .view--all {
         margin-top: 25px;
         margin-bottom: 15px;
@@ -88,7 +89,7 @@ $primary-c: #ee4d2d;
                 }
                 .items__price {
                     font-size: 2rem;
-                    margin-bottom: 5px;
+                    margin: 10px 0;
                     font-weight: 600;
                     span {
                         font-size: 1.6rem;

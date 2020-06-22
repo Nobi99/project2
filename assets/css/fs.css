@@ -1,0 +1,23 @@
+.fs-heading {
+  font-size: 1.8rem; }
+.fs-category-list {
+  margin-bottom: 20px;
+  background-color: white; }
+  .fs-category-list-items {
+    width: 20%;
+    padding: 20px 5px;
+    font-size: 2rem;
+    position: relative;
+    cursor: pointer; }
+    .fs-category-list-items .active {
+      content: "";
+      width: 100%;
+      height: 5px;
+      background-color: #ee4d2d;
+      position: absolute;
+      bottom: 0;
+      right: 0; }
+  .fs-category-list-items:hover {
+    color: #ee4d2d; }
+
+/*# sourceMappingURL=fs.css.map */

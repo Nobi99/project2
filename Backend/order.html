@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quản trị - Store</title>
+	<!-- css -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/backend.css">
+	<!-- <link rel="stylesheet" href="../assets/css/base.css"> -->
+	<link rel="stylesheet" href="./css/base.css"> 
+	
+	<link href="css/styles.css" rel="stylesheet">
+	<!--Icons-->
+	<script src="js/lumino.glyphs.js"></script>
+	<link rel="stylesheet" href="Awesome/css/all.css">
+</head>
+<body>
+	<!-- header -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#"><span>NobMi </span>Admin</a>
+				<ul class="user-menu">
+					<li class="dropdown pull-right">
+						<a href="#" class="dropdown-toggle t-blue" data-toggle="dropdown"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> admin <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu"><li><a href="#"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg>Thông tin</a></li>
+						<li><a href="login.html"><svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> Logout</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div><!-- /.container-fluid -->
+	</nav>
+	<!-- header -->
+	<!-- sidebar left-->
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+		<form role="search">
+		</form>
+		<ul class="nav menu">
+			<li class="active"><a href="index.html" class="t-blue"><svg class="glyph stroked dashboard-dial t-blue"><use xlink:href="#stroked-dashboard-dial"></use></svg> Tổng quan</a></li>
+			<li><a href="category.html" class="t-blue"><svg class="glyph stroked clipboard with paper t-blue"><use xlink:href="#stroked-clipboard-with-paper" /></svg> Danh Mục</a></li>
+			<li><a href="listproduct.html" class="t-blue"><svg class="glyph stroked bag"><use xlink:href="#stroked-bag"></use></svg> Sản phẩm</a></li>
+			<li><a href="order.html" class="t-blue"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad" /></svg> Đơn hàng</a></li>
+			<li role="presentation" class="divider"></li>
+			<li><a href="listuser.html" class="t-blue"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> Quản lý thành viên</a></li>
+		</ul>
+
+	</div>
+	<!--/. end sidebar left-->
+
+	<!--main-->
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+		<div class="row">
+			<ol class="breadcrumb">
+				<li><a href="#"><svg class="glyph stroked home">
+							<use xlink:href="#stroked-home"></use>
+						</svg></a></li>
+				<li class="active">Đơn hàng</li>
+			</ol>
+		</div>
+		<!--/.row-->
+		<div class="row">
+			<div class="col-xs-12 col-md-12 col-lg-12">
+				
+					<div class="nav-list flex items-center bg-white t-center">
+						<div class="nav-list-items">Tất cả</div>
+						<div class="nav-list-items">Đã đóng gói</div>
+						<div class="nav-list-items">Đã bàn giao cho ĐVVC</div>
+						<div class="nav-list-items">Đang giao</div>
+						<div class="nav-list-items">Đã giao</div>
+					</div>
+					<div class="order">
+						<div class="order__title flex items-center pd-20 bg-white">
+							<p class="t-bold id t-center">ID</p>
+							<p class="t-blur custom">Khách hàng</p>
+							<p class="t-blur phone">Điện thoại</p>
+							<p class="t-blur address">Địa chỉ</p>
+							<p class="t-blur date t-right">Ngày đặt hàng</p>
+						</div>
+						<div class="order-prd-list bg-white">
+							<div class="order-prd-list-items flex items-center">
+									<p class="order__id t-center">1</p>
+									<p class="order__custom">Trần Thế Chiến</p>
+									<p class="order__phone">0868547591</p>
+									<p class="order__address">Ngõ 88 Chùa Quỳnh</p>
+		
+									<p class="order__date t-right">18/4/2020 16:11</p>
+							</div>
+		
+							<div class="prd__total-money">
+								<p class="t-right">Tổng số tiền: <span class="t-primary t-bold">₫ 360.000</span></p>
+							</div>
+
+							<div class="prd__more-infor flex items-center no-mg">
+								<p class="status no-mg">Trạng thái: <span class="t-primary t-bold">ĐÃ GIAO</span></p>
+								<div class="action flex items-center">
+									<div class="btn bg-primary t-white no-bd">Chi tiết</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="order-prd-list bg-white">
+							<div class="order-prd-list-items flex items-center">
+									<p class="order__id t-center">1</p>
+									<p class="order__custom">Trần Thế Chiến</p>
+									<p class="order__phone">0868547591</p>
+									<p class="order__address t-continue">Ngõ 88 Chùa Quỳnh</p>
+		
+									<p class="order__date t-right">18/4/2020 16:11</p>
+							</div>
+		
+							<div class="prd__total-money">
+								<p class="t-right">Tổng số tiền: <span class="t-primary t-bold">₫ 360.000</span></p>
+							</div>
+
+							<div class="prd__more-infor flex items-center no-mg">
+								<p class="status no-mg">Trạng thái: <span class="t-primary t-bold">ĐÃ GIAO</span></p>
+								<div class="action flex items-center">
+									<div class="btn bg-primary t-white no-bd">Chi tiết</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<!--/.row-->
+
+
+	</div>
+	<!--end main-->
+
+	<!-- javascript -->
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/chart.min.js"></script>
+	<script src="js/chart-data.js"></script>
+	
+	
+	
+
+</body>
+
+</html>

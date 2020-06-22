@@ -39,6 +39,10 @@ ul {
   color: white !important;
 }
 
+.t-blur {
+  color: rgba(39, 38, 38, 0.5);
+}
+
 .t-black {
   color: black !important;
 }
@@ -54,7 +58,6 @@ ul {
 .t-blue {
   color: #05a;
 }
-
 .t-primary {
   color: #ee4d2d !important;
 }
@@ -71,19 +74,34 @@ ul {
   display: -webkit-box;
 }
 
+.t-right {
+  text-align: right;
+}
+
 .t-underline {
   text-decoration: underline !important;
 }
 
 .bg-primary {
-  background-color: #ee4d2d;
+  background-color: #ee4d2d !important;
 }
 .bg-white {
   background-color: white;
 }
+.bg-blue {
+  background-color: #05a;
+}
+
+.pd-20 {
+  padding: 20px !important;
+}
 
 .d-block {
   display: block;
+}
+
+.d-inline-bl {
+  display: inline-block;
 }
 
 .bold {
@@ -111,6 +129,27 @@ ul {
   background: rgba(255, 87, 34, 0.1);
 }
 
+.btn--return {
+  display: block;
+  border-radius: 3px;
+  padding: 16px;
+  transition: transform 0.2s ease;
+  width: 250px;
+  font-size: 1.8rem;
+}
+
+.btn--return:hover {
+  transform: translateX(-3px);
+}
+
+.btn--return:active {
+  transform: translate(-3px, 3px);
+}
+
+.no-mg {
+  margin: 0 !important;
+}
+
 .no-mg-bottom {
   margin-bottom: 0px !important;
 }
@@ -133,6 +172,10 @@ ul {
 
 .no-bd-left {
   border-left: none;
+}
+
+.no-bd {
+  border: none !important;
 }
 
 .visible {
@@ -572,7 +615,6 @@ a:active {
   flex: 1;
   border-radius: 2px;
   margin-right: 10px;
-  overflow: hidden;
 }
 .pc-header-mid .mid-search-box__search-bar form {
   display: flex;

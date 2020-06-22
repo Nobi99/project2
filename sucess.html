@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <title>Trang chủ</title>
+</head>
+
+<body>
+    <header id="header">
+        <!-- mobile-header -->
+        <div class="m-header m-hide">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col c-12 m-header-swapper">
+                        <span class="m-header__search-icon">
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <form action="" class="m-header__search-form">
+                            <input type="text" placeholder="Tìm Shoppe">
+                        </form>
+                        <span class="m-header__cart">
+                            <i class="fas fa-shopping-cart t-white"></i>
+                        </span>
+                        <span class="m-header__user">
+                            <i class="far fa-user t-white"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PC header -->
+        <div class="pc-header show cart-page__header">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-12 m-12 c-12">
+                        <div class="pc-header-top">
+                            <ul class="top-right">
+                                <li class="top-right-items"><a href="#">Kênh người bán</a></li>
+                                <li class="top-right-items top-right__download">
+                                    <a href="">Tải ứng dụng</a>
+                                    <div class="download__img-list popover--border">
+                                        <a href=""><img src="assets/img/dl_qr.png" alt="" class="download-img__qr"></a> 
+                                        <div class="download__img-app flex">
+                                           <a href=""><img src="assets/img/dl_google.png" alt="" class="left"></a> 
+                                           <a href=""><img src="assets/img/dl_apple.png" alt="" class="right"></a>
+                                        </div>
+                                        
+                                    </div>
+                                </li>
+                                <li class="top-right-items">Kết nối 
+                                    <a href="#"><span class="top-right-items-icon"><i class="fab fa-facebook"></i></span></a>
+                                    <a href="#"><span class="top-right-items-icon"><i class="fab fa-instagram"></i></span></a>
+                                </li>
+                            </ul>
+                            <ul class="top-left flex">
+                                <li class="top-left-items top-left__notification">
+                                    <i class="far fa-bell"></i>
+                                    Thông báo
+
+                                    <!-- Chưa đăng nhập -->
+                                    <div class="notification__off popover" style="background-image: url(assets/img/notification.png);">
+                                        <p>Hãy đăng nhập để xem thông báo</p>
+                                        <div class="notification__off-register">
+                                            <a>Đăng nhập</a>
+                                            <a>Đăng kí</a>
+                                        </div>
+                                    </div>
+                                    <!-- Đã đăng nhập -->
+                                    <div class="notification__on popover popover--border">
+                                        <span class="notification__on-num number--border">9</span>
+                                        <p class="notification__on-title">Thông Báo Mới Nhận</p>
+                                        <ul class="notification__on-content">
+                                            <li class="content-list">
+                                                <a href="#" class="content-list__link">
+                                                    <img src="assets/img/nf_1.png" alt="" class="content-list__img">
+                                                    <p class="content-list__text">
+                                                        <span class="bold">Thông báo từ shoppe game</span> <br>
+                                                        Với công nghệ mới,  mang đến các tẩy trang, 
+                                                        làm sạch, giữ ẩm và dưỡng mềm da đồng thời chỉ trong một sản phẩm. 
+                                                        
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class="content-list">
+                                                <a href="#" class="content-list__link">
+                                                    <img src="assets/img/nf_2.jfif" alt="" class="content-list__img">
+                                                    <p class="content-list__text">
+                                                        <span class="bold">Tặng mã hoàn 25k xu cho game bay cùng shoppe</span> <br>
+                                                        Với công nghệ mới,  mang đến các tẩy trang, 
+                                                        làm sạch, giữ ẩm và dưỡng mềm da đồng thời chỉ trong một sản phẩm.                                               
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class="content-list">
+                                                <a href="#" class="content-list__link">
+                                                    <img src="assets/img/nf_1.png" alt="" class="content-list__img">
+                                                    <p class="content-list__text">
+                                                        <span class="bold">Thông báo từ Nivia</span> <br>
+                                                        Với công nghệ mới,  mang đến các tẩy trang, 
+                                                        làm sạch, giữ ẩm và dưỡng mềm da đồng thời chỉ trong một sản phẩm. 
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </ul>  <!-- End notification__on-content -->
+                                        
+                                        <a href="#" class="notification__on-viewall">Xem tất cả</a>
+
+                                    </div>
+                                </li>
+                                <li class="top-left-items">
+                                    <a href="">
+                                        <i class="far fa-question-circle"></i>
+                                        Trợ giúp
+                                    </a>
+                                </li>
+                                <li class="top-left-items bold seperator"><a href="#">Đăng kí</a></li>
+                                <li class="top-left-items bold"><a href="#">Đăng nhập</a></li>
+                            </ul>
+                        </div> <!--End pc-header-top-->
+                    </div>
+                </div>
+            </div> <!--End grid-wide-->
+        </div> <!--End pc-header-->
+    </header>
+
+    
+    <div class="other__heading bg-white no-mg-bottom">
+        <a class="grid wide flex items-center" href="index.html">
+            <div class="other__heading-logo" style="background-image: url(assets/img/logo_2.png); background-repeat: no-repeat; background-size: contain;"></div>
+            <p class="other__heading-title t-primary">Thanh toán thành công</p>
+        </a>
+    </div>
+    
+    
+    <div class="grid wide bg-white">
+        <div class="success">
+            <div class="success__icon" style="background-image: url(assets/img/success.gif); background-repeat: no-repeat; background-size: contain; background-position: center;"></div>
+            <p class="success__message t-center">Bạn đã đặt hàng thành công ! Kiểm tra trạng thái đơn hàng trong phần tài khoản của tôi.</p>
+            <a class="btn btn--return bg-primary t-white t-bold t-center d-block mg-auto">
+                <i class="fas fa-arrow-circle-left t-white"></i>
+                Quay lại trang chủ
+            </a>
+        </div>    
+    </div>
+
+    <footer class="footer">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-3 m-3 c-3 footer__care">
+                    <p class="section--heading">
+                        Chăm sóc khách hàng
+                    </p>
+                    <ul class="care__list">
+                        <li class="list-items">
+                            <a href="#">Trung tâm trợ giúp</a>
+                        </li>
+                        <li class="list-items">
+                            <a href="#">Thanh toán</a>
+                        </li>
+                        <li class="list-items">
+                            <a href="#">Trả hàng, hoàn tiền</a>
+                        </li>
+                        <li class="list-items">
+                            <a href="#">Hướng dẫn mua hàng</a>
+                        </li>
+                        <li class="list-items">
+                            <a href="#">Chính sách bảo hành</a>
+                        </li>
+                        <li class="list-items">
+                            <a href="#">Hướng dẫn mua hàng</a>
+                        </li>
+                        <li class="list-items">
+                            <a href="#">Trung tâm trợ giúp</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l-3 m-3 c-3 footer__about">
+                    <p class="section--heading">
+                        Về Nobmi
+                    </p>
+                    <ul class="about__list">
+                        <li class="list-items">
+                            <a href="#">Giới thiệu NobMi</a>
+                        </li>
+                        <li class="list-items">
+                            <a href="#">Liên hệ với chúng tôi</a>
+                        </li>
+                        <li class="list-items">
+                            <a href="#"></a>
+                        </li>
+                        <li class="list-items">
+                            <a href="#">Tuyển dụng</a>
+                        </li>
+                        <li class="list-items">
+                            <a href="#">Điều khoản</a>
+                        </li>
+                        <li class="list-items">
+                            <a href="#">Chính sách bảo mật</a>
+                        </li>
+                        <li class="list-items">
+                            <a href="#">Flash sale</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l-3 m-3 c-3 footer__payment">
+                    <p class="section--heading">
+                        Thanh toán
+                    </p>
+                    <ul class="payment__list flex">
+                        <li class="list-items">
+                            <img src="./assets/img/footer-visa.png" alt="" style="width: 70px;">
+                        </li>
+                        <li class="list-items">
+                            <img src="./assets/img/footer-master.png" alt="" style="width: 70px;">
+                        </li>
+                        <li class="list-items">
+                            <img src="./assets/img/footer-airpay.png" alt="" style="width: 70px;">
+                        </li>
+                        <li class="list-items">
+                            <img src="./assets/img/footer-tra-gop.png" alt="" style="width: 70px;">
+                        </li>
+                        <li class="list-items">
+                            <img src="./assets/img/footer-jcb.png" alt="" style="width: 70px;">
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l-3 m-3 c-3 footer__follow">
+                    <p class="section--heading">
+                        Theo dõi chúng tôi trên
+                    </p>
+                    <ul class="about__list">
+                        <li class="list-items">
+                            <a href="#"><i class="fab fa-facebook"></i>Trên facebook</a>
+                        </li>
+                        <li class="list-items">
+                            <a href="#"><i class="fab fa-instagram"></i>Trên instagram</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="assets/css/grid.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/cart.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <title>Trang chủ</title>
 </head>
@@ -130,10 +129,10 @@
             </div> <!--End grid-wide-->
         </div> <!--End pc-header-->
     </header>
-    <div class="cart__heading bg-white">
+    <div class="other__heading bg-white">
         <div class="grid wide flex items-center">
-            <div class="cart__heading-logo" style="background-image: url(assets/img/logo_2.png); background-repeat: no-repeat; background-size: contain;"></div>
-            <p class="cart__heading-title t-primary">Giỏ hàng</p>
+            <div class="other__heading-logo" style="background-image: url(assets/img/logo_2.png); background-repeat: no-repeat; background-size: contain;"></div>
+            <p class="other__heading-title t-primary">Giỏ hàng</p>
         </div>
     </div>
     <!-- Cart -->
@@ -181,7 +180,7 @@
                                     </div>
                                     <div class="prd flex items-center">
                                         <img class="prd__img" src="./assets/img/prd-1.jpg">
-                                        <p class="prd__name">Son kem lì lalalia</p>
+                                        <a class="prd__name d-block t-black">Son kem lì lalalia</a>
                                     </div>
                                 </div>
             
@@ -413,7 +412,7 @@
             var minor = preE.value;
             if (minor > 1) {
                 preE.value = --minor;
-                preE.createAtribute
+                preE.createAtribute;
             }
             else {
                 alert("Giá trị phải > 0");

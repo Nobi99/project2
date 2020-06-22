@@ -30,49 +30,51 @@
     .category-list-items .items__link-bottom .items__img {
       margin-top: 0px; }
 
-.fs .view--all {
-  margin-top: 25px;
-  margin-bottom: 15px;
-  font-size: 1.3rem;
-  color: #ee4d2d;
-  margin-right: 30px; }
-  .fs .view--all span {
-    text-align: center;
-    display: inline-block;
-    height: 16px;
-    width: 16px;
-    position: relative;
-    top: 1px;
-    border-radius: 50%;
-    background-color: #e6320e;
-    padding-top: 1px; }
-.fs-list-items {
-  width: 200px;
-  height: 246px;
-  border-top: 1px solid rgba(0, 0, 0, 0.07);
-  position: relative; }
-  .fs-list-items .items__link {
-    text-align: center;
+.fs {
+  margin-bottom: 10px; }
+  .fs .view--all {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
     color: #ee4d2d;
-    font-size: 1.5rem; }
-    .fs-list-items .items__link .items__img {
-      margin: 0px auto;
-      margin-top: 6px;
-      width: 170px;
-      height: 170px; }
-    .fs-list-items .items__link .items__price {
-      font-size: 2rem;
-      margin-bottom: 5px;
-      font-weight: 600; }
-      .fs-list-items .items__link .items__price span {
-        font-size: 1.6rem; }
-    .fs-list-items .items__link .items__progress {
+    margin-right: 30px; }
+    .fs .view--all span {
       text-align: center;
-      border-radius: 10px;
-      width: 160px;
-      margin: 0 auto; }
-      .fs-list-items .items__link .items__progress p {
-        text-transform: uppercase; }
+      display: inline-block;
+      height: 16px;
+      width: 16px;
+      position: relative;
+      top: 1px;
+      border-radius: 50%;
+      background-color: #e6320e;
+      padding-top: 1px; }
+  .fs-list-items {
+    width: 200px;
+    height: 246px;
+    border-top: 1px solid rgba(0, 0, 0, 0.07);
+    position: relative; }
+    .fs-list-items .items__link {
+      text-align: center;
+      color: #ee4d2d;
+      font-size: 1.5rem; }
+      .fs-list-items .items__link .items__img {
+        margin: 0px auto;
+        margin-top: 6px;
+        width: 170px;
+        height: 170px; }
+      .fs-list-items .items__link .items__price {
+        font-size: 2rem;
+        margin: 10px 0;
+        font-weight: 600; }
+        .fs-list-items .items__link .items__price span {
+          font-size: 1.6rem; }
+      .fs-list-items .items__link .items__progress {
+        text-align: center;
+        border-radius: 10px;
+        width: 160px;
+        margin: 0 auto; }
+        .fs-list-items .items__link .items__progress p {
+          text-transform: uppercase; }
 
 .banner__img {
   height: auto;

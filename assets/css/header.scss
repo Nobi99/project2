@@ -132,11 +132,8 @@ a:active {
     a {
         display: inline-block;
         height: 100%;
-        // padding-top: 8px;
-        // padding-right: 8px;
     }
     &-top {
-        
         display: flex;
         font-size: 1.6rem;
         justify-content: space-between;
@@ -145,11 +142,6 @@ a:active {
         a:hover {
             color: rgba(255, 255, 255, 0.5);
         }
-        // a {
-        //     display: inline-block;
-        //     height: 100%;
-        // }
-        //top-right
         .top-right {
             display: flex;
             li {
@@ -363,7 +355,6 @@ a:active {
             flex: 1;
             border-radius: 2px;
             margin-right: 10px;
-            overflow: hidden;
             &__search-bar {
                 form {
                     display: flex;

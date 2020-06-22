@@ -1,0 +1,107 @@
+$t-primary: #ee4d2d;
+
+
+.nav-list {
+    width: 100%;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 2px;
+    box-shadow: 0px 1px 0 1px rgba(0,0,0,0.1);
+    &-items {
+        padding: 20px;
+        width: 20%;
+        font-size: 1.8rem;
+        cursor: pointer;
+        position: relative;
+    }
+    &-items::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 4px;
+        width: 100%;
+        background-color: $t-primary;
+        display: none;
+    }
+    &-items:hover {
+        color: $t-primary;
+    }
+}
+.prd__price {
+    width: 15%;
+}
+.prd__total-money {
+    span {
+        font-size: 3rem;
+    }
+}
+
+.prd__more-infor {
+    margin-bottom: 10px;
+    .status {
+        flex: 1;
+    }
+
+    .btn {
+        border: 1px solid rgba($color: #000000, $alpha: 0.6);
+        border-radius: 2px;
+        margin: 5px;
+        font-size: 1.8rem;
+        padding: 10px 40px;
+    }
+    .btn:not(:first-child):hover {
+        color: $t-primary !important;
+        border-color: $t-primary;
+    }
+
+    .btn:first-child:hover {
+        background-color: #9b7d77 !important;
+    }
+}
+
+.order {
+    &__title {
+        border-radius: 2px;
+        box-shadow: 0px 1px 0 1px rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        p {
+            margin: 0 !important;
+        }
+        .id {
+            width: 5%;
+            
+        }
+        .custom, 
+        .phone {
+            width: 25%;
+        }
+        .address {
+            width: 30%;
+        }
+        .date {
+            width: 15%;
+        }
+    }
+    &-prd-list {
+        border-radius: 2px;
+        box-shadow: 0px 1px 0 1px rgba(0,0,0,0.1);
+        padding: 20px;
+        margin-bottom: 10px;
+        .order__id {
+            width: 5%;
+        }
+        .order__custom,
+        .order__phone {
+            width: 25%;
+        }
+        .order__address {
+            width: 30%;
+        }
+        .order__date {
+            width: 15%;
+        }
+
+    }
+}

@@ -1,0 +1,75 @@
+.user-avatar {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+}
+.user-avatar__name {
+  font-size: 1.8rem;
+  margin-left: 8px;
+  -webkit-line-clamp: 1 !important;
+}
+.user-edit {
+  margin-top: 20px;
+}
+.user-edit-list {
+  margin: 15px;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+.user-edit-list:hover {
+  color: #ee4d2d;
+}
+.user .my-product {
+  width: 100%;
+  font-size: 1.6rem;
+}
+.user .my-product .nav-list {
+  margin-bottom: 10px;
+}
+.user .my-product .nav-list-items {
+  padding: 20px;
+  width: 20%;
+  font-size: 1.8rem;
+  cursor: pointer;
+  position: relative;
+}
+.user .my-product .nav-list-items::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background-color: #ee4d2d;
+  display: none;
+}
+.user .my-product .nav-list-items:hover {
+  color: #ee4d2d;
+}
+.user .my-product .prd__price {
+  width: 15%;
+}
+.user .my-product .prd__total-money span {
+  font-size: 3rem;
+}
+.user .my-product .prd__more-infor {
+  margin-bottom: 10px;
+}
+.user .my-product .prd__more-infor .status {
+  flex: 1;
+}
+.user .my-product .prd__more-infor .btn {
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  border-radius: 2px;
+  margin: 5px;
+  font-size: 1.8rem;
+  padding: 10px 40px;
+}
+.user .my-product .prd__more-infor .btn:not(:first-child):hover {
+  color: #ee4d2d !important;
+  border-color: #ee4d2d;
+}
+.user .my-product .prd__more-infor .btn:first-child:hover {
+  background-color: #f0735a;
+}
+
+/*# sourceMappingURL=user.css.map */

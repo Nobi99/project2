@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="assets/css/grid.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/cart.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <title>Trang chủ</title>
 </head>
@@ -130,28 +129,76 @@
             </div> <!--End grid-wide-->
         </div> <!--End pc-header-->
     </header>
-    <div class="cart__heading bg-white">
-        <div class="grid wide flex items-center">
-            <div class="cart__heading-logo" style="background-image: url(assets/img/logo_2.png); background-repeat: no-repeat; background-size: contain;"></div>
-            <p class="cart__heading-title t-primary">Thanh toán</p>
-        </div>
+
+    
+    <div class="other__heading bg-white no-mg-bottom">
+        <a class="grid wide flex items-center" href="index.html">
+            <div class="other__heading-logo" style="background-image: url(assets/img/logo_2.png); background-repeat: no-repeat; background-size: contain;"></div>
+            <p class="other__heading-title t-primary">Thanh Toán</p>
+        </a>
     </div>
   
     <section class="checkout">
-        <div class="order-infor">
-            <p class="order__place">
-                <i class="fas fa-map-marker-alt"></i>
-                Địa chỉ nhận hàng
-            </p>
-            
-            <div class="order-infor flex">
-                <p class="order-infor__name">Trần Thế Chiến (0868547591)</p>
-                <p class="order-infor__addr">Ngõ 184, Phố Chùa Quỳnh</p>
-                <a class="order-infor__change d-block t-blue t-bold">Thay đổi</a>
+        <div class="grid wide">
+            <div class="order-border"></div>
+            <div class="order-infor bg-white">
+                <p class="order-infor__place t-primary">
+                    <i class="fas fa-map-marker-alt t-primary"></i>
+                    Địa chỉ nhận hàng
+                </p>
+                
+                <div class="flex">
+                    <p class="order-infor__name t-bold">Trần Thế Chiến (0868547591)</p>
+                    <p class="order-infor__addr">Ngõ 184, Phố Chùa Quỳnh</p>
+                    <a class="order-infor__change d-block t-blue t-bold">Thay đổi</a>
+                </div>
             </div>
 
+            <div class="order-prd bg-white">
+                <div class="order-prd__title flex">
+                    <p class="t-bold">Sản phẩm</p>
+                    <p class="t-blur">Đơn giá</p>
+                    <p class="t-blur">Số lượng</p>
+                    <p class="t-blur t-right">Thành tiền</p>
+                </div>
+                <div class="cart-prd-list">
+                    <div class="cart-prd-list-items flex items-center">
+                        <div class="left flex">
+                            <div class="prd flex items-center">
+                                <img class="prd__img" src="./assets/img/prd-1.jpg">
+                                <p class="prd__name t-continue">Son kem lì lalalia Tinh dầu tự nhiên ahihihi</p>
+                            </div>
+                        </div>
+                        <p class="prd__price">
+                            ₫ 360.000
+                        </p>
+                        <p class="prd__quantity no-mg">x1</p>
 
+                        <p class="prd__total t-right">₫ 360.000</p>
+                        
+                    </div>
+
+                    <div class="prd__total-money">
+                        <p class="t-blur">Tổng số tiền: <span class="t-primary t-bold">₫ 360.000</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="order-payment-method flex items-center bg-white">
+                <p class="method__heading t-bold">Phương thức thanh toán</p>
+                <div class="method__list flex items-center">
+                    <p class="method__list-items">Ví AirPay</p>
+                    <p class="method__list-items">Thẻ ATM</p>
+                    <p class="method__list-items">Ví shoppe</p>
+                    <p class="method__list-items">Thanh toán khi nhận hàng</p>
+                </div>
+            </div>
+
+            <div class="order-finish bg-white">
+                <a class="btn bg-primary t-center mg-auto t-white btn--finish t-bold d-block" href="#">Đặt hàng</a>
+            </div>
         </div>
+        
     </section>
 
 
