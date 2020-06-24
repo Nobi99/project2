@@ -1,0 +1,8 @@
+Ajax get using in Laravel
+
+$(ajax) {
+	url: ,
+	type: 'GET',
+	success: function(data) {
+	}
+}
